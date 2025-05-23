@@ -1,5 +1,5 @@
-import React from "react"
-import { Routes, Route, useRoutes } from 'react-router-dom';
+import * as React from "react"
+import  { Routes, Route, useRoutes } from 'react-router-dom';
 import HomePage from "./pages/Homepages";
 function App() {
 
