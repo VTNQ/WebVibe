@@ -3,7 +3,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // quét tất cả file React
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        basier: ['Basier Square', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
