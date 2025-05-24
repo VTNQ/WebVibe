@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes moveObjectPosition {
+    0% {
+        object-position: top;
+    }
+
+    50% {
+        object-position: bottom;
+    }
+
+    100% {
+        object-position: top;
+    }
+}
+
+.custom-hover-effect {
+    position: relative;
+    overflow: hidden;
+    background: #0D5DD6;
+    /* button trong suốt */
+    z-index: 0;
+}
+
+.custom-hover-effect::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background: linear-gradient(90deg, #0D5DD6 0%, #9747FF 100%);
+    z-index: -1;
+    transition: all 1s;
+}
+
+.custom-hover-effect:hover::before {
+    width: 153%;
+    /* mở rộng gradient */
+    background: linear-gradient(90deg, #0D5DD6 0%, #9747FF 100%);
+    background-size: 200% 100%;
+    background-position: right;
+    /* dịch chuyển gradient sang phải */
+}
+
+.btn-hover-gradient {
+    position: relative;
+    overflow: hidden;
+    color: #0D5DD6;
+    border: 1px solid #0D5DD6;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.btn-hover-gradient::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    /* đổi từ -40px thành 0 */
+    transform: skewX(45deg);
+    background: linear-gradient(90deg, #0D5DD6 0%, #9747FF 100%);
+    z-index: -1;
+    transition: width 1s ease;
+}
+
+.btn-hover-gradient:hover {
+
+    background: #0D5DD6;
+    color: white;
+    z-index: 1;
+}
+
+.btn-hover-gradient:hover::before {
+    width: 160%;
+
+}
