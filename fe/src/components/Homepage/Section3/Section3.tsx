@@ -121,7 +121,7 @@ const Section3 = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover object-top group-hover:object-bottom transition-[object-position] duration-[7000ms] ease-in-out"
+                   className="w-full h-full object-cover object-top group-hover:object-bottom transition-[object-position] duration-[10000ms] ease-in-out"
                 />
 
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
