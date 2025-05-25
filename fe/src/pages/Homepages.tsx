@@ -8,11 +8,13 @@ import Section4 from "../components/Homepage/Section4/Section4";
 import Section5 from "../components/Homepage/Section5/Section5";
 import Section6 from "../components/Homepage/Section6/Section6";
 import Section7 from "../components/Homepage/Section7/Section7";
+import Section1 from "../components/Homepage/Section1/Section1";
 const HomePage=()=>{
-  
+
 return(
     <>
     <NavBar/>
+        <Section1/>
     <Section3/>
     <Section4/>
     <Section5/>
