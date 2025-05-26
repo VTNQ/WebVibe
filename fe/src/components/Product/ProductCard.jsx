@@ -23,7 +23,7 @@ const ProductCard = () => {
       name: "Mẫu Website Bất động sản A",
       price: "4,000,000 VND",
       category: "Bất động sản",
-      img: "/img/bds01.webp",
+      img: "/img/homepage/website_bg_makingYourDream.png",
       features: ["Xem thực tế", "Dùng thử"],
     },
     {
@@ -31,7 +31,7 @@ const ProductCard = () => {
       name: "Mẫu Website Nhà hàng B",
       price: "3,000,000 VND",
       category: "Nhà hàng",
-      img: "/img/nhahang01.webp",
+      img: "/img/homepage/website_bg_pizza.png",
       features: ["Xem thực tế", "Dùng thử"],
     },
     {
