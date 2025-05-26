@@ -9,7 +9,7 @@ function Section2(){
                     Launch Your First <br /> Website
                 </h2>
                 <img
-
+    // cs
                     src="/public/img/homepage/section2_1.png"
                     alt="For Beginners"
                     className="mb-6 w-auto h-48"
