@@ -2,7 +2,7 @@ import * as React from "react";
 
 function Section2(){
     return (
-        <div className="w-full grid-cols-1 sm:grid-cols-2 max-w-7xl mx-auto py-10   md:grid-cols-3 px-6 grid   gap-8 ">
+        <div className="w-full grid-cols-1 sm:grid-cols-2 max-w-7xl mx-auto py-10   md:grid-cols-2 px-6  grid   gap-8 lg:grid-cols-3 ">
             <div className="bg-[#FFE979] rounded-lg p-8 flex flex-col items-center text-center">
                 <p className="text-sm font-semibold mb-2">For Beginners</p>
                 <h2 className="text-xl md:text-2xl font-bold mb-4">

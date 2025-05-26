@@ -1,4 +1,3 @@
-import './Section1.css';
 
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -6,11 +5,11 @@ function Section1(){
 
 
     return(
-        <div className=" bg-white flex items-center justify-center px-4 py-1">
+        <div className=" bg-white flex items-center justify-center px-4 py-1 ">
             <div className="max-w-7xl w-full grid lg:grid-cols-[36%_65%] gap-12 items-center">
 
                 {/* Left column */}
-                <div className="space-y-6 content-start">
+                <div className="space-y-6 content-start py-8">
                     <h1 className="text-5xl text-[#2D2D2D] font-bold leading-tight mb-9 md:text-6xl">
                         The Ultimate <br />
 
