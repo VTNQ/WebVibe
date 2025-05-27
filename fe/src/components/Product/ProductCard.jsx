@@ -7,7 +7,7 @@ const ProductCard = () => {
       name: "Mẫu Website Thời trang 07",
       price: "3,500,000 VND",
       category: "Thời trang",
-      img: "/img/thoitrang07.webp",
+      img: "/img/product/thoitrang07.webp",
       features: ["Xem thực tế", "Dùng thử"],
     },
     {
@@ -15,7 +15,7 @@ const ProductCard = () => {
       name: "Mẫu Website Thời trang 08",
       price: "3,500,000 VND",
       category: "Thời trang",
-      img: "/img/thoitrang08.webp",
+      img: "/img/product/thoitrang08.webp",
       features: ["Xem thực tế", "Dùng thử"],
     },
     {
@@ -23,7 +23,7 @@ const ProductCard = () => {
       name: "Mẫu Website Bất động sản A",
       price: "4,000,000 VND",
       category: "Bất động sản",
-      img: "/img/bds01.webp",
+      img: "/img/homepage/website_bg_makingYourDream.png",
       features: ["Xem thực tế", "Dùng thử"],
     },
     {
@@ -31,7 +31,7 @@ const ProductCard = () => {
       name: "Mẫu Website Nhà hàng B",
       price: "3,000,000 VND",
       category: "Nhà hàng",
-      img: "/img/nhahang01.webp",
+      img: "/img/homepage/website_bg_pizza.png",
       features: ["Xem thực tế", "Dùng thử"],
     },
     {
@@ -58,7 +58,7 @@ const ProductCard = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
-  const itemsPerPage = 4;
+  const itemsPerPage = 8;
 
   // Lọc sản phẩm
   const filteredProducts = allProducts.filter((product) => {

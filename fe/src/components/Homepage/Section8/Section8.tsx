@@ -2,7 +2,7 @@ import React from "react";
 
 const Section8 = () => {
     return (
-        <section className="relative z-10 bg-green-300 py-10 px-4 md:px-16 rounded-2xl mx-4 shadow-xl -mb-20">
+        <section className="relative z-10 bg-green-300 py-10 px-4 md:px-16 rounded-2xl mx-4 shadow-xl -mb-20 mt-8">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
                 <div className="text-center md:text-left space-y-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
