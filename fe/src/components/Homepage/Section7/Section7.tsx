@@ -12,7 +12,7 @@ const Section7: React.FC = () => {
                 {/* Left Side - Ảnh rộng bằng form */}
                 <div className="w-full md:w-2/3 flex items-center justify-center overflow-hidden rounded-2xl">
                     <img
-                        src="/img/section7.webp"
+                        src="/img/homepage/image_section_7_1.png"
                         alt="Shop visual"
                         className="w-full h-full object-cover rounded-2xl"
                     />
