@@ -16,8 +16,9 @@ return(
     <>
     <NavBar/>
         <Section1/>
-        <Section2/>
+
     <Section3/>
+        <Section2/>
     <Section4/>
     <Section5/>
         <Section6/><Section7/>
