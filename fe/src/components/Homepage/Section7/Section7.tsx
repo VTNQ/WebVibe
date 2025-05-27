@@ -14,7 +14,7 @@ const Section7: React.FC = () => {
                     <img
                         src="/img/section7.webp"
                         alt="Shop visual"
-                        className="w-full h-full max-h-[500px] object-cover rounded-2xl aspect-[4/3]"
+                        className="w-full h-full max-h-[600px] object-cover rounded-2xl aspect-[4/3]"
                     />
                 </div>
 
