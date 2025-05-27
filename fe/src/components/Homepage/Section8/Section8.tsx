@@ -21,7 +21,7 @@ const Section8 = () => {
                         src="/img/homepage/image_section_8_1.png"
 
                         alt="Avada UI Preview"
-                        className="rounded-xl shadow-lg w-auto h-[15rem] object-cover"
+                        className="rounded-xl  w-auto h-[15rem] object-cover"
                     />
                 </div>
             </div>
