@@ -8,18 +8,18 @@ const Section7: React.FC = () => {
                 backgroundImage: `url('/img/banner-form-section7.jpg')`,
             }}
         >
-            <div className="rounded-2xl shadow-xl p-6 md:p-12 max-w-7xl w-full flex flex-col md:flex-row items-stretch gap-8 backdrop-blur">
-                {/* Left Side - Ảnh rộng bằng form */}
-                <div className="w-full md:w-2/3 flex items-center justify-center overflow-hidden rounded-2xl">
+            <div className="rounded-2xl shadow-xl p-6 lg:p-12 max-w-7xl w-full flex flex-col lg:flex-row items-stretch gap-8 backdrop-blur bg-white/90">
+                {/* Left Side - Ảnh */}
+                <div className="w-full lg:w-2/3 flex items-center justify-center overflow-hidden rounded-2xl">
                     <img
                         src="/img/section7.webp"
                         alt="Shop visual"
-                        className="w-full h-full object-cover rounded-2xl"
+                        className="w-full h-full max-h-[600px] object-cover rounded-2xl aspect-[4/3]"
                     />
                 </div>
 
                 {/* Right Side - Form */}
-                <div className="w-full md:w-1/3 bg-white rounded-2xl p-6 md:p-8 shadow-md flex flex-col justify-center">
+                <div className="w-full lg:w-1/3 bg-white rounded-2xl p-6 md:p-8 shadow-md flex flex-col justify-center">
                     <h2 className="text-xl md:text-2xl font-bold text-blue-700 mb-2">
                         Bạn cần tư vấn thêm về dịch vụ thiết kế Web tại Web4s?
                     </h2>
