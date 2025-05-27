@@ -48,7 +48,7 @@ function Section1(){
 
                 <div className="relative flex justify-center">
                     <img
-                       src="/public/img/homepage/section1_bg.png"
+                       src="/public/img/homepage/bg3.png"
                         alt="Website Builder UI"
                         className="  w-full max-w-[1400px] h-auto"
                     />
