@@ -9,7 +9,6 @@ const Section7: React.FC = () => {
             }}
         >
             <div className="rounded-2xl shadow-xl p-6 lg:p-12 max-w-7xl w-full flex flex-col lg:flex-row items-stretch gap-8 backdrop-blur bg-white/90">
-                <textarea>Test</textarea>
                 {/* Left Side - Ảnh */}
                 <div className="w-full lg:w-2/3 flex items-center justify-center overflow-hidden rounded-2xl">
                     <img
