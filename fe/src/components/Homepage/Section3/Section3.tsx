@@ -83,7 +83,7 @@ const Section3 = () => {
               <div key={i}>
                 <div className="flex items-center justify-between text-sm mb-1">
                   <div className="flex items-center gap-2 w-48">
-                    
+
                     <span>{item.label}</span>
                   </div>
                   <span>{item.percent}%</span>
@@ -104,36 +104,37 @@ const Section3 = () => {
       </div>
 
       {/* Project Slider Section */}
-      <div className="relative z-10 p-6 lg:p-8 rounded-2xl bg-gray-50 shadow-inner max-w-full lg:col-span-7">
+      <div className="relative z-10 p-6 lg:p-8 rounded-2xl max-w-full lg:col-span-7">
         <h3 className="text-lg font-bold mb-4">Dự án tiêu biểu</h3>
         <p className="text-sm text-gray-600 mb-4">Click below to preview demo</p>
         <Slider {...sliderSettings}>
           {projects.map((project, i) => (
             <div key={i} className="px-2">
-           <div className="block relative h-[400px] rounded-2xl overflow-hidden shadow-lg group bg-white">
-  <img
-    src={project.image}
-    alt={project.title}
-    className="w-full h-full object-cover object-top group-hover:object-bottom transition-[object-position] duration-[10000ms] ease-in-out"
-  />
+              <div className="block relative h-[400px] rounded-2xl overflow-hidden shadow-lg group bg-white">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover object-top group-hover:object-bottom transition-[object-position] duration-[10000ms] ease-in-out"
+                />
 
-  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
-    <h4 className="font-semibold text-lg">{project.title}</h4>
-    <p className="text-sm uppercase tracking-wider">{project.category}</p>
-  </div>
 
-  {/* Nút "View Demo" riêng biệt, không bao toàn thẻ */}
-  <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-md"
-    >
-      View Demo
-    </a>
-  </div>
-</div>
+
+                {/* Nút "View Demo" riêng biệt, không bao toàn thẻ */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
+                    <h4 className="font-semibold text-lg">{project.title}</h4>
+                    <p className="text-sm uppercase tracking-wider">{project.category}</p>
+                  </div>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-md"
+                  >
+                    View Demo
+                  </a>
+                </div>
+              </div>
 
             </div>
           ))}
