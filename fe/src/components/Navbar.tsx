@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react'; // Hoặc dùng Heroicons nếu bạn thích
+import { Menu, X } from 'lucide-react';
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,14 +8,14 @@ const NavBar = () => {
     <nav className="w-full flex items-center justify-between px-6 py-4 shadow-sm bg-white relative">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <img src="img/logo.jpg" alt="Avada Logo" className="h-6" />
+        <img src="/img/homepage/logo.png" alt="WebVibe Logo" className="h-6" />
         <span className="text-xl font-semibold text-gray-800">
           Web Vibe<span className="text-green-500">:</span>
         </span>
       </div>
 
-      {/* Desktop Menu */}
-      <div className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
+      {/* Desktop Menu (only visible ≥ 1024px) */}
+      <div className="hidden lg:flex items-center space-x-6 text-sm font-medium text-gray-700">
         <div className="group relative">
           <button className="hover:text-black">Avada ▾</button>
         </div>
@@ -29,23 +29,23 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* CTA Button */}
-      <button className="hidden md:flex ml-4 px-4 py-2 border rounded-md border-gray-300 text-sm font-medium text-gray-800 hover:border-gray-500 items-center space-x-1">
+      {/* CTA Button (only visible ≥ 1024px) */}
+      <button className="hidden lg:flex ml-4 px-4 py-2 border rounded-md border-gray-300 text-sm font-medium text-gray-800 hover:border-gray-500 items-center space-x-1">
         <span className="text-sm">✨</span>
         <span>My WebVibe</span>
       </button>
 
-      {/* Mobile Menu Toggle */}
+      {/* Mobile Menu Toggle (visible < 1024px) */}
       <button
-        className="md:hidden text-gray-700"
+        className="lg:hidden text-gray-700"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         {menuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Dropdown Menu (only visible when open) */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col px-6 py-4 space-y-4 text-sm font-medium text-gray-700 md:hidden z-50">
+        <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col px-6 py-4 space-y-4 text-sm font-medium text-gray-700 lg:hidden z-50">
           <button className="text-left hover:text-black">Avada ▾</button>
           <button className="text-left hover:text-black">Avada For ▾</button>
           <a href="#" className="hover:text-black">Hosting</a>

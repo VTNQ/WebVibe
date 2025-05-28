@@ -13,33 +13,29 @@ const Section3 = () => {
 
   const projects = [
     {
-      image: "/img/thoitrang08.webp",
-      video:
-        "/video/KIN PIZZA _ GIAO TẬN NƠI & MUA MANG VỀ - KIN PIZZA _ THƯỞNG THỨC NHỮNG CHIẾC BÁNH PIZZA THƠM NGON NHẤT TẠI TP HỒ CHÍ MINH and 4 more pages - Personal - Microsoft​ Edge 2025-05-23 19-27-44.mp4",
+      image: "/img/product/thoitrang08.webp",
+      video: "/video/kinpizza.mp4",
       title: "Website Streetwear",
       category: "Bán hàng",
       link: "http://kinpizza.com/",
     },
     {
-      image: "/img/thoitrang07.webp",
-      video:
-        "/video/Wisdom Engineering and Business Solutions and 6 more pages - Personal - Microsoft​ Edge 2025-05-23 19-40-12.mp4",
+      image: "/img/product/thoitrang07.webp",
+      video: "/video/wisdom.mp4",
       title: "Website Mỹ Phẩm",
       category: "Làm đẹp",
       link: "https://wisdomrobotics.org/",
     },
     {
-      image: "/img/MarkeTing.png",
-      video:
-        "/video/Homepage - WebMarketing and 8 more pages - Personal - Microsoft​ Edge 2025-05-23 19-44-42.mp4",
+      image: "/img/homepage/website_bg_makingYourDream.png",
+      video: "/video/marketing.mp4",
       title: "Website MarkeTing",
-      category: "MARKETING",
+      category: "Marketing",
       link: "https://marketing.wisdombrain.org/home",
     },
     {
-      image: "/img/QuảngBa.png",
-      video:
-        "/video/Construction and 14 more pages - Personal - Microsoft​ Edge 2025-05-23 19-49-08.mp4",
+      image: "/img/homepage/website_bg_pizza.png",
+      video: "/video/construction.mp4",
       title: "Website Quảng Bá",
       category: "Quảng Bá",
       link: "https://wisdomconstruction.wisdombrain.org/",
@@ -50,12 +46,12 @@ const Section3 = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Số item hiển thị trên 1 slide
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     responsive: [
       {
-        breakpoint: 768, // mobile
+        breakpoint: 1024, // iPad & smaller
         settings: {
           slidesToShow: 1,
         },
@@ -64,9 +60,9 @@ const Section3 = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto py-10 px-4 md:px-6 grid grid-cols-1 md:grid-cols-10 gap-8 ">
-      {/* Left Stats Section - chiếm 3 cột */}
-      <div className="relative rounded-2xl p-6 md:p-8 text-white overflow-hidden max-w-[500px] md:col-span-3">
+    <div className="w-full max-w-7xl mx-auto py-10 px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-10 gap-8">
+      {/* Stats Section */}
+      <div className="relative rounded-2xl p-6 lg:p-8 text-white overflow-hidden max-w-full lg:col-span-3">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1a2a6c] to-[#b21f1f] opacity-95" />
         <div
           className="absolute inset-0 opacity-10"
@@ -87,11 +83,7 @@ const Section3 = () => {
               <div key={i}>
                 <div className="flex items-center justify-between text-sm mb-1">
                   <div className="flex items-center gap-2 w-48">
-                    {/* Thanh phần trăm nhỏ bên trái */}
-                    <div
-                      className="h-2 rounded-full bg-yellow-400"
-                      style={{ width: `${item.percent}%` }}
-                    />
+
                     <span>{item.label}</span>
                   </div>
                   <span>{item.percent}%</span>
@@ -111,32 +103,39 @@ const Section3 = () => {
         </div>
       </div>
 
-      {/* Right Project Slider Section - chiếm 7 cột */}
-      <div className="relative z-10 p-6 md:p-8 rounded-2xl bg-gray-50 shadow-inner max-w-full md:col-span-7">
+      {/* Project Slider Section */}
+      <div className="relative z-10 p-6 lg:p-8 rounded-2xl max-w-full lg:col-span-7">
         <h3 className="text-lg font-bold mb-4">Dự án tiêu biểu</h3>
+        <p className="text-sm text-gray-600 mb-4">Click below to preview demo</p>
         <Slider {...sliderSettings}>
           {projects.map((project, i) => (
             <div key={i} className="px-2">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block relative h-[400px] rounded-2xl overflow-hidden shadow-lg group bg-white"
-              >
+              <div className="block relative h-[400px] rounded-2xl overflow-hidden shadow-lg group bg-white">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="
-                    w-full h-full object-cover object-top
-                    group-hover:object-bottom
-                    transition-[object-position] duration-[1500ms] ease-in-out
-                  "
+                  className="w-full h-full object-cover object-top group-hover:object-bottom transition-[object-position] duration-[10000ms] ease-in-out"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
-                  <h4 className="font-semibold text-lg">{project.title}</h4>
-                  <p className="text-sm uppercase tracking-wider">{project.category}</p>
+
+
+
+                {/* Nút "View Demo" riêng biệt, không bao toàn thẻ */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
+                    <h4 className="font-semibold text-lg">{project.title}</h4>
+                    <p className="text-sm uppercase tracking-wider">{project.category}</p>
+                  </div>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-md"
+                  >
+                    View Demo
+                  </a>
                 </div>
-              </a>
+              </div>
+
             </div>
           ))}
         </Slider>
