@@ -1,4 +1,5 @@
 import React from "react";
+import { FiPhoneCall } from "react-icons/fi";
 
 const industries = [
   { title: "Thiết kế Website Bán Hàng", img: "/img/industry/web-ban-hang.jpg" },
@@ -43,10 +44,14 @@ export default function Section4() {
       </div>
 
       <div className="mt-8">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full transition">
-          Xem thêm giao diện →
-        </button>
-      </div>
+              <a
+                href="/Contact" // hoặc tel: hoặc open modal
+                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-full shadow transition"
+              >
+                <FiPhoneCall className="text-lg" />
+                Liên hệ ngay
+              </a>
+            </div>
     </section>
   );
 }
