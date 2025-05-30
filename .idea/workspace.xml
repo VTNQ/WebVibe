@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe55a87f-7c49-4671-8c88-96d172f9337f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package-lock.json" afterDir="false" />
+    <list default="true" id="fe55a87f-7c49-4671-8c88-96d172f9337f" name="Changes" comment="Update By Nghia">
+      <change afterPath="$PROJECT_DIR$/fe/public/img/AboutUs/team-hands.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe/src/components/AboutUs/Section2/Section2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fe/src/components/AboutUs/Section3/Section3.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/components/Homepage/Section4/Section4.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fe/src/components/Homepage/Section4/Section4.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/pages/AboutUsPages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fe/src/pages/AboutUsPages.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/pages/ContactPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fe/src/pages/ContactPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/pages/Productpage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fe/src/pages/Productpage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +22,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dangvanphucnghia&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VTNQ/WebVibe.git&quot;,
+    &quot;accountId&quot;: &quot;92f15cef-c6d8-44b1-9727-0441e7cdd79e&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;VTNQ&quot;,
+    &quot;repository&quot;: &quot;WebVibe&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2xUHoqGGoZ675irfyMT2sPDUsaF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,19 +59,18 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/Sourcode/IntelliJCode/WebVibe/WebVibe",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/WebVibe/fe/public/img/AboutUs",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
-      </set>
-    </attachedChunks>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebVibe\fe\public\img\AboutUs" />
+    </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fe55a87f-7c49-4671-8c88-96d172f9337f" name="Changes" comment="" />
@@ -52,6 +80,58 @@
       <updated>1747985910625</updated>
       <workItem from="1747985912318" duration="35000" />
     </task>
+    <task id="LOCAL-00001" summary="Update By Nghia">
+      <option name="closed" value="true" />
+      <created>1748398560374</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748398560374</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update By Nghia">
+      <option name="closed" value="true" />
+      <created>1748486546740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748486546740</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update By Nghia">
+      <option name="closed" value="true" />
+      <created>1748596839994</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748596839994</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update By Nghia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update By Nghia" />
   </component>
 </project>
