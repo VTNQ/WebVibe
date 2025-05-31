@@ -5,13 +5,13 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full flex items-center justify-between px-6 py-4 shadow-sm bg-white relative">
+    <nav className="w-full flex items-center justify-between px-6 py-4 shadow-sm bg-[#67AE6E] relative">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <img src="/img/homepage/logo.png" alt="WebVibe Logo" className="h-6" />
-        <span className="text-xl font-semibold text-gray-800">
-          Web Vibe<span className="text-green-500">:</span>
-        </span>
+        <img src="/img/homepage/logo1.png" alt="WebVibe Logo" className="h-10" />
+        {/*<span className="text-xl font-semibold text-gray-800">*/}
+        {/*  Web Vibe<span className="text-green-500">:</span>*/}
+        {/*</span>*/}
       </div>
 
       {/* Desktop Menu (only visible ≥ 1024px) */}
