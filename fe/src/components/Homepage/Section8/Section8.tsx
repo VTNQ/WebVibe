@@ -2,22 +2,19 @@ import React from "react";
 
 const Section8 = () => {
     return (
-        <section className="relative z-10 bg-[#90C67C] py-10 px-4 md:px-10 rounded-2xl shadow-xl -mb-20 mt-8">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
-                {/* Nội dung chữ */}
-                <div className="flex-1 text-center md:text-left space-y-4 md:pr-8">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white leading-snug">
+        <section className="relative z-10 bg-[#67AE6E]  py-10 px-4 md:px-16 rounded-2xl shadow-xl -mb-20 mt-8">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="text-center md:text-left space-y-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white">
                         Build Successful <br />
                         Websites With Avada
                     </h2>
                     <p className="text-white max-w-md mx-auto md:mx-0">
                         Whether you are a beginner, marketer, or professional, Avada has the tools & resources you can rely on to succeed.
                     </p>
-                    <div className="flex justify-center md:justify-start">
-                        <button className="mt-4 bg-[#328E6E] text-white font-semibold px-6 py-3 rounded-sm hover:bg-green-800 transition">
-                            Buy Avada For $69 →
-                        </button>
-                    </div>
+                    <button className="mt-4 bg-green-800 text-white font-semibold px-6 py-3 rounded-sm hover:bg-[#90C67C] transition">
+                        Buy Avada For $69 →
+                    </button>
                 </div>
 
                 {/* Hình ảnh */}

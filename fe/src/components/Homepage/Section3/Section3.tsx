@@ -70,7 +70,7 @@ const Section3 = ({onScrollToSection4}) => {
             backgroundImage: `
               linear-gradient(
                 to bottom,
-                #b6e3c9,   /* Light green at the top */
+                #67AE6E,   /* Light green at the top */
                 #6cb28e,   /* Slightly darker green */
                 #3a7f6a,   /* Darker green */
                 #4a6e5d,   /* Milder dark green */
@@ -85,7 +85,7 @@ const Section3 = ({onScrollToSection4}) => {
         />
         <div className="relative z-10">
           <h2 className="text-lg font-semibold uppercase">
-            MẪU THIẾT KẾ WEB <br />
+            TOP WEBSITE <br />
             <span className="text-2xl font-extrabold">ĐƯỢC QUAN TÂM NHẤT</span> <br />
             TRONG THÁNG
           </h2>
@@ -117,7 +117,7 @@ const Section3 = ({onScrollToSection4}) => {
 
       {/* Project Slider Section */}
       <div className="relative z-10 px-6  rounded-2xl max-w-full lg:col-span-7">
-        <h3 className="text-lg font-bold mb-4">Dự án tiêu biểu</h3>
+        <h3 className="text-[1.8rem] font-bold mb-4 text-[#67AE6E]">Dự Án Tiêu Biểu</h3>
         <p className="text-sm text-gray-600 mb-4">Click below to preview demo</p>
         <Slider {...sliderSettings}>
           {projects.map((project, i) => (
@@ -143,7 +143,7 @@ const Section3 = ({onScrollToSection4}) => {
                     rel="noopener noreferrer"
                     className="bg-[#67AE6E] text-white font-semibold px-4 py-2 rounded-lg shadow-md"
                   >
-                    View Demo
+                    Xem Demo
                   </a>
                 </div>
               </div>

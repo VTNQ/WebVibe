@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10">
                 {/* Logo + Stats */}
                 <div>
-                    <h2 className="text-white text-2xl font-bold mb-3">Avada</h2>
+                    <h2 className="text-white text-2xl font-bold mb-3">WebVibe</h2>
                     <div>
                         <span className="inline-block bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
                             1,000,000+
@@ -69,9 +69,8 @@ const Footer = () => {
             {/* Footer Bottom */}
             <div className="mt-10 border-t border-gray-700 pt-5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
                 <p className="text-center md:text-left">
-                    © 2012 – 2025 | Avada Website Builder by{" "}
-                    <span className="text-blue-400">ThemeFusion</span> | Powered by{" "}
-                    <span className="text-blue-400">WordPress</span>
+                    © 2024 – 2025 | WebVibe Website Builder by {"WebVibe company"}
+
                 </p>
                 <div className="flex gap-4 text-white text-lg">
                     <FaFacebookF className="hover:text-green-500 cursor-pointer" />
