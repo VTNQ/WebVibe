@@ -33,6 +33,7 @@ function Section1(){
                         Contact to Designing
                         <i className='ml-2.5  self-center  text-[1.4rem] bx bx-right-arrow-alt'></i>
                     </button>
+
                     <img className="w-[70%] " src="/public/img/homepage/pencil_line.png" alt=""/>
                     <div className="flex space-x-12 mt-10 text-center">
                         <div className="flex flex-col items-start">
