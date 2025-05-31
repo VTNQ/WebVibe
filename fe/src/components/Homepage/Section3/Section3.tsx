@@ -115,7 +115,7 @@ const Section3 = () => {
       </div>
 
       {/* Project Slider Section */}
-      <div className="relative z-10 p-6 lg:p-8 rounded-2xl max-w-full lg:col-span-7">
+      <div className="relative z-10 px-6  rounded-2xl max-w-full lg:col-span-7">
         <h3 className="text-lg font-bold mb-4">Dự án tiêu biểu</h3>
         <p className="text-sm text-gray-600 mb-4">Click below to preview demo</p>
         <Slider {...sliderSettings}>
