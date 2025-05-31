@@ -2,7 +2,21 @@ const Section2 = () => {
     return (
         <section className="px-4">
             <div className="max-w-6xl mx-auto py-10">
-                <div className="bg-gradient-to-r from-green-400 to-blue-500 rounded-xl flex flex-col md:flex-row items-center justify-center px-6 py-8 md:py-10 gap-6 md:gap-0">
+                <div style={{
+                    backgroundImage: `
+              linear-gradient(
+                to bottom,
+                #67AE6E,   /* Light green at the top */
+                #6cb28e,   /* Slightly darker green */
+                #3a7f6a,   /* Darker green */
+                #4a6e5d,   /* Milder dark green */
+                #2a4136    /* Subtle dark green at the bottom */
+              ),
+              radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.08) 0.5px, transparent 0.5px)
+            `,
+                    backgroundSize: "100% 100%, 20px 20px",
+                    opacity: 1,
+                }} className="0 rounded-xl flex flex-col md:flex-row items-center justify-center px-6 py-8 md:py-10 gap-6 md:gap-0">
                     <div className="flex flex-col items-center w-full md:w-auto">
                         <h2 className="text-white font-semibold text-lg md:text-xl leading-tight text-center max-w-xl">
                             Bắt đầu số hóa phát triển doanh nghiệp

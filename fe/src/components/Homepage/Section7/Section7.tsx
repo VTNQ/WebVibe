@@ -21,10 +21,10 @@ const Section7: React.FC = () => {
                 {/* Right Side - Form */}
                 <div className="w-full lg:w-1/3 bg-white rounded-2xl p-6 md:p-8 shadow-md flex flex-col justify-center">
                     <h2 className="text-xl md:text-2xl font-bold text-[#67AE6E] mb-2">
-                        Bạn cần tư vấn thêm về dịch vụ thiết kế Web tại Web4s?
+                        Bạn cần tư vấn thêm về dịch vụ gia công Web tại WebVibe
                     </h2>
                     <p className="text-sm text-gray-600 mb-6">
-                        Vui lòng để lại thông tin, Web4s sẽ liên hệ lại bạn trong thời gian sớm nhất
+                        Vui lòng để lại thông tin, WebVibe sẽ liên hệ lại bạn trong thời gian sớm nhất
                     </p>
 
                     <form className="space-y-6">
