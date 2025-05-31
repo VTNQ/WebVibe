@@ -9,9 +9,9 @@ const NavBar = () => {
       {/* Logo */}
       <Link to="/" className="flex items-center space-x-2">
         <img src="/img/homepage/logo.png" alt="WebVibe Logo" className="h-6" />
-        <span className="text-xl font-semibold text-gray-800">
-          Web Vibe<span className="text-green-500">:</span>
-        </span>
+        {/*<span className="text-xl font-semibold text-gray-800">*/}
+        {/*  Web Vibe<span className="text-green-500">:</span>*/}
+        {/*</span>*/}
       </Link>
 
       {/* Desktop Menu (only visible ≥ 1024px) */}
