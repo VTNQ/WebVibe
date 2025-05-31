@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const Section3 = () => {
+import { Link } from "react-router-dom";
+const Section3 = ({onScrollToSection4}) => {
   const stats = [
     { label: "Web bán hàng", percent: 41 },
     { label: "Web giới thiệu doanh nghiệp", percent: 27 },
@@ -81,7 +81,7 @@ const Section3 = () => {
             backgroundSize: "100% 100%, 20px 20px",
             opacity: 1,
           }}
-          
+
         />
         <div className="relative z-10">
           <h2 className="text-lg font-semibold uppercase">
@@ -94,8 +94,9 @@ const Section3 = () => {
               <div key={i}>
                 <div className="flex items-center justify-between text-sm mb-1">
                   <div className="flex items-center gap-2 w-48">
-
-                    <span>{item.label}</span>
+                    <Link to="/contact" >
+                      <span>{item.label}</span>
+                    </Link>
                   </div>
                   <span>{item.percent}%</span>
                 </div>
@@ -108,7 +109,7 @@ const Section3 = () => {
               </div>
             ))}
           </div>
-          <button className="mt-6 w-full bg-white text-[#1a2a6c] font-semibold py-3 rounded-md hover:bg-gray-100 transition">
+          <button onClick={onScrollToSection4} className="mt-6 w-full bg-white text-[#1a2a6c] font-semibold py-3 rounded-md hover:bg-gray-100 transition">
             Đăng ký ngay
           </button>
         </div>
