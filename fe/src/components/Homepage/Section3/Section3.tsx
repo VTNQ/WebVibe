@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const Section3 = () => {
+import { Link } from "react-router-dom";
+const Section3 = ({onScrollToSection4}) => {
   const stats = [
     { label: "Web bán hàng", percent: 41 },
     { label: "Web giới thiệu doanh nghiệp", percent: 27 },
@@ -70,7 +70,7 @@ const Section3 = () => {
             backgroundImage: `
               linear-gradient(
                 to bottom,
-                #b6e3c9,   /* Light green at the top */
+                #67AE6E,   /* Light green at the top */
                 #6cb28e,   /* Slightly darker green */
                 #3a7f6a,   /* Darker green */
                 #4a6e5d,   /* Milder dark green */
@@ -81,11 +81,11 @@ const Section3 = () => {
             backgroundSize: "100% 100%, 20px 20px",
             opacity: 1,
           }}
-          
+
         />
         <div className="relative z-10">
           <h2 className="text-lg font-semibold uppercase">
-            MẪU THIẾT KẾ WEB <br />
+            TOP WEBSITE <br />
             <span className="text-2xl font-extrabold">ĐƯỢC QUAN TÂM NHẤT</span> <br />
             TRONG THÁNG
           </h2>
@@ -94,8 +94,9 @@ const Section3 = () => {
               <div key={i}>
                 <div className="flex items-center justify-between text-sm mb-1">
                   <div className="flex items-center gap-2 w-48">
-
-                    <span>{item.label}</span>
+                    <Link to="/contact" >
+                      <span>{item.label}</span>
+                    </Link>
                   </div>
                   <span>{item.percent}%</span>
                 </div>
@@ -108,15 +109,15 @@ const Section3 = () => {
               </div>
             ))}
           </div>
-          <button className="mt-6 w-full bg-white text-[#1a2a6c] font-semibold py-3 rounded-md hover:bg-gray-100 transition">
+          <button onClick={onScrollToSection4} className="mt-6 w-full bg-white text-[#1a2a6c] font-semibold py-3 rounded-md hover:bg-gray-100 transition">
             Đăng ký ngay
           </button>
         </div>
       </div>
 
       {/* Project Slider Section */}
-      <div className="relative z-10 p-6 lg:p-8 rounded-2xl max-w-full lg:col-span-7">
-        <h3 className="text-lg font-bold mb-4">Dự án tiêu biểu</h3>
+      <div className="relative z-10 px-6  rounded-2xl max-w-full lg:col-span-7">
+        <h3 className="text-[1.8rem] font-bold mb-4 text-[#67AE6E]">Dự Án Tiêu Biểu</h3>
         <p className="text-sm text-gray-600 mb-4">Click below to preview demo</p>
         <Slider {...sliderSettings}>
           {projects.map((project, i) => (
@@ -142,7 +143,7 @@ const Section3 = () => {
                     rel="noopener noreferrer"
                     className="bg-[#67AE6E] text-white font-semibold px-4 py-2 rounded-lg shadow-md"
                   >
-                    View Demo
+                    Xem Demo
                   </a>
                 </div>
               </div>

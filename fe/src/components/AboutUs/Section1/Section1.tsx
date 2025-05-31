@@ -105,7 +105,7 @@ const Section1 = () => {
         {/* Right Content */}
         <div className="relative flex justify-end items-center">
           <img
-            src="img/AboutUs/faq-right.webp"
+            src="img/AboutUs/aboutus_image.png"
             alt="Web4s FAQ"
             width={800}
             height={800}

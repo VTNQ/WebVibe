@@ -2,54 +2,48 @@ import React, { useState } from "react";
 
 const ProductCard = () => {
   const allProducts = [
+
     {
       id: 1,
-      name: "Mẫu Website Thời trang 07",
-      price: "3,500,000 VND",
-      category: "Thời trang",
-      img: "/img/product/thoitrang07.webp",
-      features: ["Xem thực tế", "Dùng thử"],
-    },
-    {
-      id: 2,
-      name: "Mẫu Website Thời trang 08",
-      price: "3,500,000 VND",
-      category: "Thời trang",
-      img: "/img/product/thoitrang08.webp",
-      features: ["Xem thực tế", "Dùng thử"],
-    },
-    {
-      id: 3,
       name: "Mẫu Website Bất động sản A",
       price: "4,000,000 VND",
       category: "Bất động sản",
       img: "/img/homepage/website_bg_makingYourDream.png",
       features: ["Xem thực tế", "Dùng thử"],
+      link: 'https://marketing.wisdombrain.org/home'
     },
     {
-      id: 4,
+      id: 2,
       name: "Mẫu Website Nhà hàng B",
       price: "3,000,000 VND",
       category: "Nhà hàng",
-      img: "/img/homepage/website_bg_pizza.png",
+      img: "/img/motor.png",
+      features: ["Xem thực tế", "Dùng thử"],
+    },
+    {
+      id: 3,
+      name: "Mẫu Website Thời trang 09",
+      price: "3,500,000 VND",
+      category: "Thời trang",
+      img: "/img/robotic.png",
+      features: ["Xem thực tế", "Dùng thử"],
+    },
+    {
+      id: 4,
+      name: "Mẫu Website Thời trang 10",
+      price: "3,500,000 VND",
+      category: "Thời trang",
+      img: "/img/wisdom_robotic.png",
       features: ["Xem thực tế", "Dùng thử"],
     },
     {
       id: 5,
-      name: "Mẫu Website Thời trang 09",
+      name: "Mẫu Website Thời trang 11",
       price: "3,500,000 VND",
       category: "Thời trang",
-      img: "/img/thoitrang09.webp",
+      img: "/img/car_page.png",
       features: ["Xem thực tế", "Dùng thử"],
-    },
-    {
-      id: 6,
-      name: "Mẫu Website Thời trang 10",
-      price: "3,500,000 VND",
-      category: "Thời trang",
-      img: "/img/thoitrang10.webp",
-      features: ["Xem thực tế", "Dùng thử"],
-    },
+    }
   ];
 
   const categories = ["Tất cả", "Thời trang", "Bất động sản", "Nhà hàng"];
@@ -91,30 +85,30 @@ const ProductCard = () => {
 
       {/* Bộ lọc */}
       <form
-  onSubmit={handleSearch}
-  className="flex flex-col sm:flex-row items-center gap-3 bg-white p-4 rounded-lg mb-8 max-w-4xl mx-auto shadow"
->
-  <select
-    value={selectedCategory}
-    onChange={(e) => setSelectedCategory(e.target.value)}
-    className="w-full sm:w-1/3 px-4 py-2 rounded-md bg-blue-100 border border-blue-300 focus:outline-none"
-  >
-    {categories.map((cat) => (
-      <option key={cat} value={cat}>
-        Chọn lĩnh vực: {cat}
-      </option>
-    ))}
-  </select>
+        onSubmit={handleSearch}
+        className="flex flex-col sm:flex-row items-center gap-3 bg-white p-4 rounded-lg mb-8 max-w-4xl mx-auto shadow"
+      >
+        <select
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          className="w-full sm:w-1/3 px-4 py-2 rounded-md bg-green-100 border border-green-300 focus:outline-none"
+        >
+          {categories.map((cat) => (
+            <option key={cat} value={cat}>
+              Chọn lĩnh vực: {cat}
+            </option>
+          ))}
+        </select>
 
-  <input
-    type="text"
-    placeholder="Từ khóa..."
-    value={searchTerm}
-    onChange={(e) => setSearchTerm(e.target.value)}
-    className="w-full sm:flex-1 px-4 py-2 rounded-md bg-blue-100 border border-blue-300 focus:outline-none"
-  />
+        <input
+          type="text"
+          placeholder="Từ khóa..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full sm:flex-1 px-4 py-2 rounded-md bg-green-100 border border-green-300 focus:outline-none"
+        />
 
-</form>
+      </form>
 
 
       {/* Danh sách sản phẩm */}
@@ -132,19 +126,24 @@ const ProductCard = () => {
               />
             </div>
             <div className="p-4 sm:p-5">
-              <h2 className="text-blueProduct hover:text-orangeProduct transition-all ease-in hover: text-lg sm:text-xl font-semibold mb-2">
+              <h2 className="text-greenProduct hover:text-orangeProduct transition-all ease-in hover: text-lg sm:text-xl font-semibold mb-2">
                 {product.name}
               </h2>
               <p className="text-redProduct font-bold text-base sm:text-lg mb-4">
                 {product.price}
               </p>
               <div className="flex gap-2">
-              <button className="relative overflow-hidden flex-1 bg-transparent text-white py-2 rounded-lg transition-colors custom-hover-effect">
-                          {product.features[0]}
-                        </button>
-                        <button className="btn-hover-gradient flex-1 py-2 rounded-lg transition-colors">
-                          {product.features[1]}
-                        </button>
+                <a
+                  target="_blank"
+                  href={product.link}
+                  className="relative overflow-hidden flex-1 bg-transparent text-white py-2 rounded-lg transition-colors custom-hover-effect text-center"
+                >
+                  {product.features[0]}
+                </a>
+
+                <button className="btn-hover-gradient flex-1 py-2 rounded-lg transition-colors">
+                  {product.features[1]}
+                </button>
               </div>
             </div>
           </div>
@@ -165,11 +164,10 @@ const ProductCard = () => {
             <button
               key={i}
               onClick={() => setCurrentPage(i + 1)}
-              className={`px-3 py-1 rounded-md text-sm ${
-                currentPage === i + 1
-                  ? "bg-blue-600 text-white"
-                  : "border text-gray-700"
-              }`}
+              className={`px-3 py-1 rounded-md text-sm ${currentPage === i + 1
+                ? "bg-blue-600 text-white"
+                : "border text-gray-700"
+                }`}
             >
               {i + 1}
             </button>
