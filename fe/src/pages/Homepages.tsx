@@ -11,18 +11,28 @@ import Section7 from "../components/Homepage/Section7/Section7";
 import Section1 from "../components/Homepage/Section1/Section1";
 import Section2 from "../components/Homepage/Section2/Section2";
 const HomePage=()=>{
+    const section4Ref = React.useRef(null);
 
+    const scrollToSection4 = () => {
+      section4Ref.current?.scrollIntoView({ behavior: "smooth" });
+    };
+  
 return(
     <>
     <NavBar/>
         <Section1/>
 
-    <Section3/>
+    <Section3 onScrollToSection4={scrollToSection4}/>
         {/*<Section2/>*/}
         <Section5/>
         <Section6/>
-        <Section4/>
+      
+        <Section4 />
+      
+        <div ref={section4Ref}>
         <Section7/>
+        </div>
+      
     <Section8/>
     <Footer/>
     </>

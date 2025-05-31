@@ -25,6 +25,7 @@ module.exports = {
 				},
 				redProduct: '#F44336',
 				blueProduct: '#002F75',
+				greenProduct: '#228B22',
 				orangeProduct: '#F76C06',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',

@@ -34,7 +34,7 @@ html, body, #root {
 .custom-hover-effect {
     position: relative;
     overflow: hidden;
-    background: #0D5DD6;
+    background: #38A169;
     /* button trong suốt */
     z-index: 0;
 }
@@ -47,7 +47,7 @@ html, body, #root {
     top: 0;
     left: -40px;
     transform: skewX(45deg);
-    background: linear-gradient(90deg, #0D5DD6 0%, #9747FF 100%);
+    background: linear-gradient(90deg, #38A169 0%, #9747FF 100%);
     z-index: -1;
     transition: all 1s;
 }
@@ -55,7 +55,7 @@ html, body, #root {
 .custom-hover-effect:hover::before {
     width: 153%;
     /* mở rộng gradient */
-    background: linear-gradient(90deg, #0D5DD6 0%, #9747FF 100%);
+    background: linear-gradient(90deg, #38A169 0%, #9747FF 100%);
     background-size: 200% 100%;
     background-position: right;
     /* dịch chuyển gradient sang phải */
@@ -64,8 +64,8 @@ html, body, #root {
 .btn-hover-gradient {
     position: relative;
     overflow: hidden;
-    color: #0D5DD6;
-    border: 1px solid #0D5DD6;
+    color: #38A169;
+    border: 1px solid #38A169;
     background-color: transparent;
     transition: color 0.3s ease;
 }
@@ -79,14 +79,14 @@ html, body, #root {
     left: 0;
     /* đổi từ -40px thành 0 */
     transform: skewX(45deg);
-    background: linear-gradient(90deg, #0D5DD6 0%, #9747FF 100%);
+    background: linear-gradient(90deg, #38A169 0%, #9747FF 100%);
     z-index: -1;
     transition: width 1s ease;
 }
 
 .btn-hover-gradient:hover {
 
-    background: #0D5DD6;
+    background: #38A169;
     color: white;
     z-index: 1;
 }

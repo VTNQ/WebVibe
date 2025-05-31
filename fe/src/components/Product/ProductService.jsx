@@ -19,26 +19,27 @@ const ProductService = () => {
         { icon: <Book size={28} />, label: "Sách - Văn phòng phẩm" },
     ]
     return (
-        <section className="bg-[#F4F8FF] py-12 text-center mb-4">
+        <section className="bg-[#E8F5E9] py-12 text-center mb-4">
+
             <h2 className="text-gray-500 uppercase tracking-widest mb-2">DỊCH VỤ THIẾT KẾ WEBSITE</h2>
-            <h1 className="text-3xl font-bold text-blue-600 mb-10">CHUYÊN NGHIỆP THEO LĨNH VỰC</h1>
+            <h1 className="text-3xl font-bold text-green-600 mb-10">CHUYÊN NGHIỆP THEO LĨNH VỰC</h1>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-10 gap-x-6 max-w-6xl mx-auto">
                 {services.map((item, index) => (
                     <div
-                    key={index}
-                    className="group flex flex-col items-center p-4 bg-transparent rounded-lg 
+                        key={index}
+                        className="group flex flex-col items-center p-4 bg-transparent rounded-lg 
                                 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out
                                 cursor-pointer"
-                >
-                    <div className="bg-blue-100 p-4 rounded-full text-blue-600
-                                    group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 ease-in-out"> {/* Optional: Make icon background/text change on hover too */}
-                        {item.icon}
-                    </div>
-                    <p className="text-base mt-3 font-medium text-gray-700 text-center
+                    >
+                        <div className="bg-green-100 p-4 rounded-full text-green-600
+                                    group-hover:bg-green-600 group-hover:text-white transition-all duration-300 ease-in-out"> {/* Optional: Make icon background/text change on hover too */}
+                            {item.icon}
+                        </div>
+                        <p className="text-base mt-3 font-medium text-gray-700 text-center
                                     group-hover:text-[#F76C06] transition-colors duration-300 ease-in-out">
-                        {item.label}
-                    </p>
-                </div>
+                            {item.label}
+                        </p>
+                    </div>
                 ))}
             </div>
             {/* <div className="mt-12">

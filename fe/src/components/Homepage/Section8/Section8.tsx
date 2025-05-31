@@ -16,11 +16,13 @@ const Section8 = () => {
                         Buy Avada For $69 →
                     </button>
                 </div>
-                <div className="w-full max-w-md mt-8 md:mt-0">
+
+                {/* Hình ảnh */}
+                <div className="flex-1 flex justify-center md:justify-center">
                     <img
                         src="/img/homepage/image_section_8_1.png"
                         alt="Avada UI Preview"
-                        className="rounded-xl w-auto h-[15rem] object-cover"
+                        className="rounded-xl w-full max-w-sm h-auto object-cover"
                     />
                 </div>
             </div>

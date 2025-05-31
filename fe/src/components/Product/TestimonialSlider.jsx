@@ -63,7 +63,7 @@ const TestimonialSlider = () => {
                 <div className="text-8xl text-yellow-300 absolute top-0 left-0 opacity-20 -translate-x-4 -translate-y-4 font-serif select-none">““</div>
 
                 {/* Testimonial content */}
-                <h3 className="font-bold text-2xl text-blue-800 mb-3 relative z-10">{title}</h3> {/* Made title bolder, larger, and darker blue */}
+                <h3 className="font-bold text-2xl text-green-800 mb-3 relative z-10">{title}</h3> {/* Made title bolder, larger, and darker green */}
                 <p className="text-gray-700 text-base leading-relaxed mb-6 relative z-10">{content}</p> {/* Increased text size */}
                 
                 {/* Author and position */}
@@ -74,14 +74,14 @@ const TestimonialSlider = () => {
                 {/* Arrows for navigation */}
                 <div className="absolute bottom-6 right-6 flex gap-3 z-20"> {/* Slightly increased gap and padding */}
                     <button
-                        className="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center hover:bg-blue-200 hover:text-blue-800 transition-colors duration-200 shadow-md"
+                        className="w-10 h-10 rounded-full bg-green-100 text-green-700 flex items-center justify-center hover:bg-green-200 hover:text-green-800 transition-colors duration-200 shadow-md"
                         onClick={() => handleSlideChange(-1)}
                         aria-label="Previous testimonial"
                     >
                         <FaArrowLeft size={16} /> {/* Increased icon size */}
                     </button>
                     <button
-                        className="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center hover:bg-blue-200 hover:text-blue-800 transition-colors duration-200 shadow-md"
+                        className="w-10 h-10 rounded-full bg-green-100 text-green-700 flex items-center justify-center hover:bg-green-200 hover:text-green-800 transition-colors duration-200 shadow-md"
                         onClick={() => handleSlideChange(1)}
                         aria-label="Next testimonial"
                     >
