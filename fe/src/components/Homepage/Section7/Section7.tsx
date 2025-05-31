@@ -5,7 +5,7 @@ const Section7: React.FC = () => {
         <div
             className="w-full min-h-screen bg-cover bg-center flex items-center justify-center px-4"
             style={{
-                backgroundImage: `url('/img/banner-form-section7.jpg')`,
+                backgroundImage: `url('/img/homepage/section6.jpg')`,
             }}
         >
             <div className="rounded-2xl shadow-xl p-6 lg:p-12 max-w-7xl w-full flex flex-col lg:flex-row items-stretch gap-8 backdrop-blur bg-white/90">
@@ -80,7 +80,7 @@ const Section7: React.FC = () => {
 
                         <button
                             type="submit"
-                            className="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition shadow-md"
+                            className="w-full bg-[#67AE6E] text-white font-semibold py-3 rounded-md hover:bg-[#A8E1B1] transition shadow-md"
                         >
                             Đăng ký tư vấn
                         </button>
