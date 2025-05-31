@@ -1,32 +1,30 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="w-full flex items-center justify-between px-6 py-4 shadow-sm bg-white relative">
       {/* Logo */}
-      <div className="flex items-center space-x-2">
-        <img src="/img/homepage/logo1.png" alt="WebVibe Logo" className="h-10" />
-        <span className="text-xl font-semibold text-gray-800">
-          Web Vibe<span className="text-green-500">:</span>
-        </span>
-      </div>
+      <Link to="/" className="flex items-center space-x-2">
+        <img src="/img/homepage/logo.png" alt="WebVibe Logo" className="h-6" />
+        {/*<span className="text-xl font-semibold text-gray-800">*/}
+        {/*  Web Vibe<span className="text-green-500">:</span>*/}
+        {/*</span>*/}
+      </Link>
 
       {/* Desktop Menu (only visible ≥ 1024px) */}
       <div className="hidden lg:flex items-center space-x-6 text-sm font-medium text-gray-700">
         <div className="group relative">
-          <button className="hover:text-black">Avada ▾</button>
+          <Link to="/" className="hover:text-black">WebVibe </Link>
         </div>
         <div className="group relative">
-          <button className="hover:text-black">Avada For ▾</button>
+          <Link to="/product" className="hover:text-black"> Live Product</Link>
         </div>
-        <a href="#" className="hover:text-black">Hosting</a>
-        <a href="#" className="hover:text-black">Customization</a>
-        <div className="group relative">
-          <button className="hover:text-black">Resources ▾</button>
-        </div>
+        <Link to="/contact" className="hover:text-black">Contact</Link>
+        <Link to="/aboutUs" className="hover:text-black">About Us</Link>
+       
       </div>
 
       {/* CTA Button (only visible ≥ 1024px) */}
