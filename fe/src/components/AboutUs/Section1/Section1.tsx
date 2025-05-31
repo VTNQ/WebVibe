@@ -88,7 +88,7 @@ const Section1 = () => {
         }
       }
       .group-hover\\:before\\:animate-slide-in:hover::before {
-        animation: slide-in 1.5s forwards;
+        animation: slide-in 0.5s forwards;
       }
     `}
                                     </style>
