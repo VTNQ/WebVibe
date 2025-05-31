@@ -22,7 +22,7 @@ const industries = [
 export default function Section4() {
   return (
     <section className="py-12 px-4 max-w-7xl mx-auto text-center">
-      <h2 className="text-3xl font-bold text-blue-600 uppercase mb-8">
+      <h2 className="text-3xl font-bold text-[#67AE6E] uppercase mb-8">
         Giao Diện Đẹp, Chuẩn SEO, Đa Dạng Lĩnh Vực
       </h2>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
@@ -46,7 +46,7 @@ export default function Section4() {
       <div className="mt-8">
               <a
                 href="/Contact" // hoặc tel: hoặc open modal
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-full shadow transition"
+                className="inline-flex items-center gap-2 bg-[#67AE6E] hover:bg-[#90C67C] text-white font-medium px-6 py-3 rounded-full shadow transition"
               >
                 <FiPhoneCall className="text-lg" />
                 Liên hệ ngay

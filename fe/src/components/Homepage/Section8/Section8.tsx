@@ -12,7 +12,7 @@ const Section8 = () => {
                     <p className="text-white max-w-md mx-auto md:mx-0">
                         Whether you are a beginner, marketer, or professional, Avada has the tools & resources you can rely on to succeed.
                     </p>
-                    <button className="mt-4 bg-black text-white font-semibold px-6 py-3 rounded-sm hover:bg-gray-800 transition">
+                    <button className="mt-4 bg-[#328E6E] text-white font-semibold px-6 py-3 rounded-sm hover:bg-gray-800 transition">
                         Buy Avada For $69 →
                     </button>
                 </div>
