@@ -67,10 +67,21 @@ const Section3 = () => {
         <div
           className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage:
-              "radial-gradient(circle at 10% 20%, rgba(255,255,255,0.8) 0.5px, transparent 0.5px)",
-            backgroundSize: "20px 20px",
+            backgroundImage: `
+              linear-gradient(
+                to bottom,
+                #b6e3c9,   /* Light green at the top */
+                #6cb28e,   /* Slightly darker green */
+                #3a7f6a,   /* Darker green */
+                #4a6e5d,   /* Milder dark green */
+                #2a4136    /* Subtle dark green at the bottom */
+              ),
+              radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.08) 0.5px, transparent 0.5px)
+            `,
+            backgroundSize: "100% 100%, 20px 20px",
+            opacity: 1,
           }}
+          
         />
         <div className="relative z-10">
           <h2 className="text-lg font-semibold uppercase">
