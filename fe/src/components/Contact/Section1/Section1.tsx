@@ -4,9 +4,9 @@ const Section1 = () => {
   return (
     <div
       className="
-        mx-auto p-6 bg-white rounded-xl mt-4 mb-10
+       mx-auto p-6 bg-white rounded-xl mb-10 mt-10
         max-w-full sm:max-w-md md:max-w-6xl
-        shadow-sm md:shadow-md
+        shadow-sm md:shadow-md border border-green-500
       "
     >
       <h2 className="text-2xl font-bold mb-1">Liên hệ qua email</h2>
@@ -24,7 +24,7 @@ const Section1 = () => {
             <input
               type="text"
               placeholder="Họ và tên"
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
             />
           </div>
 
@@ -36,7 +36,7 @@ const Section1 = () => {
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
             </div>
 
@@ -47,7 +47,7 @@ const Section1 = () => {
               <input
                 type="text"
                 placeholder="Số điện thoại"
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
             </div>
           </div>
@@ -57,7 +57,7 @@ const Section1 = () => {
               <FaMapMarkerAlt className="mr-2 text-gray-600" /> Chi nhánh
             </label>
             <select
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
               defaultValue="Hà Nội"
             >
               <option>Hà Nội</option>
@@ -74,11 +74,11 @@ const Section1 = () => {
           </label>
           <textarea
             placeholder="Nội dung"
-            className="border border-gray-300 rounded-md px-4 py-3 flex-1 resize-y min-h-[120px] focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="border border-gray-300 rounded-md px-4 py-3 flex-1 resize-y min-h-[120px] focus:outline-none focus:ring-2 focus:ring-green-400"
           ></textarea>
 
           <button
-            className="mt-6 w-full bg-blue-600 text-white hover:bg-blue-700 transition-all rounded-full px-6 py-3 flex items-center justify-center font-semibold shadow-md"
+            className="mt-6 w-full bg-green-600 text-white hover:bg-green-700 transition-all rounded-full px-6 py-3 flex items-center justify-center font-semibold shadow-md"
             type="submit"
           >
             <FaPaperPlane className="mr-2" />
