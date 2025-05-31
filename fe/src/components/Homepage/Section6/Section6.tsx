@@ -3,7 +3,7 @@ import React from 'react';
 const TrustSection: React.FC = () => {
     return (
         <section className="trust-section px-4 max-w-7xl mx-auto">
-            <h1 className="text-3xl font-bold text-center md:text-4xl mb-6">
+            <h1 className="text-3xl font-bold text-center md:text-4xl mb-6 text-[#67AE6E]">
                 1,019,391 Website Owners Trust Avada
             </h1>
             <p className="text-lg text-center mb-8">
@@ -13,7 +13,7 @@ const TrustSection: React.FC = () => {
                 <div className="trust-item bg-white shadow-md rounded-lg p-4 flex flex-col items-center">
                     <img src="/img/world-class-support.webp" alt="World-Class Support" className="w-24 h-24 object-cover mb-4" />
                     <h3 className="text-lg font-semibold">World-Class Support</h3>
-                    <p className="text-center">We build long-term professional relationships with our customers that you can rely on & trust.</p>
+                    <p className="text-center text-[#67AE6E]">We build long-term professional relationships with our customers that you can rely on & trust.</p>
                 </div>
                 <div className="trust-item bg-white shadow-md rounded-lg p-4 flex flex-col items-center">
                     <img src="/img/documentation.webp" alt="Documentation & Tutorials" className="w-24 h-24 object-cover mb-4" />
