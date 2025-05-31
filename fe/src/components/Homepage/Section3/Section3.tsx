@@ -129,7 +129,7 @@ const Section3 = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-md"
+                    className="bg-[#67AE6E] text-white font-semibold px-4 py-2 rounded-lg shadow-md"
                   >
                     View Demo
                   </a>

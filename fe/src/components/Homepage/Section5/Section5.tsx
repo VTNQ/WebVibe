@@ -43,7 +43,7 @@ const features = [
 export default function Section5() {
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-2">All-In-One Website Builder</h2>
+      <h2 className="text-3xl font-bold mb-2 text-[#67AE6E]">All-In-One Website Builder</h2>
       <p className="text-gray-600 mb-10">
         Experience total control over your website creation process.
       </p>
@@ -62,7 +62,7 @@ export default function Section5() {
         ))}
       </div>
       <div className="mt-10">
-        <button className="bg-black text-white px-6 py-2 rounded-full inline-flex items-center hover:bg-gray-800 transition">
+        <button className="bg-[#67AE6E] text-white px-6 py-2 rounded-full inline-flex items-center hover:bg-gray-800 transition">
           Discover More <FaArrowRight className="ml-2" />
         </button>
       </div>
