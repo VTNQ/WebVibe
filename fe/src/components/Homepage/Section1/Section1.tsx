@@ -36,7 +36,7 @@ function Section1(){
 
                     <img className="w-[70%] " src="/public/img/homepage/pencil_line.png" alt=""/>
                     <div className="flex space-x-12 mt-10 text-center">
-                        <div className="flex flex-col items-start">
+                        <div className="fl  ex flex-col items-start">
                             <p className="text-3xl font-bold text-[#67AE6E]">1,000,000+</p>
                             <p className="text-gray-500">People Trust Avada</p>
                         </div>
