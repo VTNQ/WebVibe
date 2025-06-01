@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Section8 = () => {
     return (
@@ -12,11 +13,12 @@ const Section8 = () => {
                     <p className="text-white max-w-md mx-auto md:mx-0">
                         Chỉ cần bạn có ý tưởng chúng tôi sẽ biến nó thành hiện thực.
                     </p>
-                    <button className="mt-4 bg-green-800 text-white font-semibold px-6 py-3 rounded-sm hover:bg-[#90C67C] transition">
-                        Liên hệ ngay →
-                    </button>
+                    <Link to="/contact">
+                        <button className="mt-4 bg-green-800 text-white font-semibold px-6 py-3 rounded-sm hover:bg-[#90C67C] transition">
+                            Liên hệ ngay →
+                        </button>
+                    </Link>
                 </div>
-
                 {/* Hình ảnh */}
                 <div className="flex-1 flex justify-center md:justify-center">
                     <img
