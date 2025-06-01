@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Section8 = () => {
     return (
@@ -6,17 +7,18 @@ const Section8 = () => {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
                 <div className="text-center md:text-left space-y-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white">
-                        Build Successful <br />
-                        Websites With Avada
+                        Xây dựng <br />
+                        Websites Với WebVibe
                     </h2>
                     <p className="text-white max-w-md mx-auto md:mx-0">
-                        Whether you are a beginner, marketer, or professional, Avada has the tools & resources you can rely on to succeed.
+                        Chỉ cần bạn có ý tưởng chúng tôi sẽ biến nó thành hiện thực.
                     </p>
-                    <button className="mt-4 bg-green-800 text-white font-semibold px-6 py-3 rounded-sm hover:bg-[#90C67C] transition">
-                        Buy Avada For $69 →
-                    </button>
+                    <Link to="/contact">
+                        <button className="mt-4 bg-green-800 text-white font-semibold px-6 py-3 rounded-sm hover:bg-[#90C67C] transition">
+                            Liên hệ ngay →
+                        </button>
+                    </Link>
                 </div>
-
                 {/* Hình ảnh */}
                 <div className="flex-1 flex justify-center md:justify-center">
                     <img

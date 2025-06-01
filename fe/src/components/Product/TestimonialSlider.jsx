@@ -4,19 +4,19 @@ import clsx from "clsx";
 
 const testimonials = [
   {
-    name: "Đoàn Trang",
+    name: "Thành Công",
     position: "Kinh doanh",
-    title: "Đơn vị thiết kế web uy tín với nhiều giải thưởng",
+    title: "Đơn vị thiết kế web uy tín ",
     content:
-      "Web43 tự hào là một trong những đơn vị hàng đầu trong lĩnh vực thiết kế website tại Việt Nam. Với hơn 22 năm kinh nghiệm...",
+      "WebVibe tự hào là một trong những đơn vị hàng đầu trong lĩnh vực thiết kế website tại Việt Nam ...",
     avatar: "/img/product/group11821.png",
   },
   {
-    name: "Nguyễn Minh",
+    name: "Thanh Phong",
     position: "Marketing",
     title: "Thiết kế ấn tượng, tốc độ triển khai nhanh",
     content:
-      "Web43 không chỉ mang đến giao diện đẹp mà còn tối ưu trải nghiệm người dùng. Tôi thực sự ấn tượng với tốc độ triển khai.",
+      "WebVibe không chỉ mang đến giao diện đẹp mà còn tối ưu trải nghiệm người dùng. Tôi thực sự ấn tượng với tốc độ triển khai.",
     avatar: "/img/product/group11821.png",
   },
   {

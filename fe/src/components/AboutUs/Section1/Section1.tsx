@@ -7,28 +7,25 @@ const Section1 = () => {
     {
       question: "Lợi ích của việc thiết kế website là gì ?",
       answer:
-        "Việc sở hữu một website đã trở thành một nhu cầu thiết yếu đối với các doanh nghiệp, tổ chức và cá nhân muốn bán hàng trực tuyến, mở rộng thị trường, tương tác với khách hàng qua môi trường online từ đó đưa ra các chiến lược kinh doanh hiệu quả.",
+        "Website là bộ mặt đại diện cho một doanh nghiệp, việc bạn so huữ một website sẽ khiến doanh nghiệp của bạn chuyên nghiệp hơn cũng như có thể dễ dàng tiếp cận với khách hàng trong thời buổi công nghệ 4.0.",
     },
     {
-      question: "Giá Thiết Kế Website Tại Web4s Khoảng Bao Nhiêu?",
-      answer: "",
+      question: "Giá thiết kế website tại WebVibe khoảng bao nhiêu ?",
+      answer: "Tùy thuộc vào mức độ và nhu cầu, chúng tôi cung cấp các mức giá phải chăng và đảm bảo rẻ nhất thị trường nhưng cũng không kém phần chất lượng và đầu ra hiệu quả, mức giá thông thường sẽ là 3 triệu trở lên, trong trường hợp có nhiều chức năng phức tạp , chúng tôi sẽ đưa ra mức giá hợp lý nhất.",
     },
     {
-      question: "Vì Sao Cần Phải Thiết Kế Website Chuẩn Seo ?",
-      answer: "",
+      question: "Dịch vụ chăm sóc (quản trị) website là gì ?",
+      answer: "Sau khi một website đã bước vào quá trình hoạt động thì luôn cần được cập nhật thông tin để khiến website luôn có tính động và mới mẻ với khách hàng, nên việc cập nhật và duy trì thông tin liên tục là rất cần thiết, bạn có thể tập trung vào những việc khác có tính chất quan trọng hơn.",
     },
     {
-      question: "Chi phí cho dịch vụ chăm sóc website thường dao động như thế nào?",
-      answer: "",
+      question: "Có đội ngũ hỗ trợ khi gia công website tại WebVibe không ?",
+      answer: "Để phù hợp với nghiệp vụ và tính chất của website chúng tôi sẽ làm việc và thống nhất với khách hàng các ý tưởng cũng như tư vấn mọi lúc để chất lượng đầu ra luôn được đảm bảo.",
     },
     {
-      question: "Khi thiết kế website có đội ngũ hỗ trợ tôi trong quá trình sử dụng không?",
-      answer: "",
+      question: "Mức giá cho một website cơ bản từ a tới z tại WebVibe",
+      answer: "Nếu bạn chưa có mã nguồn của giao diện web, chúng tôi sẽ thiết kế với mức giá 3 triệu, cộng với chi phí để thực hiện đưa vào hoạt động thì tổng chi phí dao động từ khoảng 6-7 triệu cho một website cơ bản.",
     },
-    {
-      question: "Web4s có hỗ trợ hướng dẫn hoặc liệu bài viết chuẩn SEO lên cho khách được không?",
-      answer: "",
-    },
+
   ];
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -38,7 +35,7 @@ const Section1 = () => {
       <div className="w-full space-y-4 text-center mt-4 font-roboto">
         <p className="text-sm text-gray-500 uppercase tracking-widest">FAQ VỀ DỊCH VỤ</p>
         <h2 className="text-3xl md:text-4xl font-bold text-green-600 uppercase leading-snug">
-          Dịch vụ chăm sóc website tại Web4s
+          Dịch vụ thiết kế website tại WebVibe
         </h2>
       </div>
 
