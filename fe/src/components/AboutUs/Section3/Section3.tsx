@@ -16,20 +16,17 @@ const Section3 = () => {
 
       {/* Main Title */}
       <h2 className="text-4xl md:text-5xl font-extrabold text-[#67AE6E] mb-6 tracking-tight">
-        Design Anything, Build Everything
+        Xây dựng mọi thứ với ý tưởng của bạn
       </h2>
 
       {/* Paragraph */}
       <p className="text-lg text-[#67AE6E] max-w-3xl mx-auto leading-relaxed">
-        Avada has been the <span className="font-semibold text-[#67AE6E]">#1 selling theme</span> on Themeforest since its launch in 2012,
-        with an ever-growing customer base of <span className="font-semibold text-[#67AE6E]">1,019,874</span>{' '}
-        <a href="#" className="underline text-[#67AE6E] hover:text-[#4a9356] font-medium transition">beginners</a>,{' '}
-        <a href="#" className="underline text-[#67AE6E] hover:text-[#4a9356] font-medium transition">marketers</a>, and{' '}
-        <a href="#" className="underline text-[#67AE6E] hover:text-[#4a9356] font-medium transition">professionals</a>.
+        WebVibe luôn cố gắng để phát triển và trở thành <span className="font-semibold text-[#67AE6E]">#1 công ty thiết kế website</span> có chất lượng và đầu ra đảm bảo nhất cho doanh nghiệp của khách hàng.
+         <span className="font-semibold text-[#67AE6E]"></span>{' '}
+
         <br className="hidden md:block" />
         <span className="block mt-4">
-          Our core focus has always been to ensure that Avada makes your web design workflow
-          more accessible and enjoyable.
+          Đặt chất lượng lên hàng đầu, quy trình nhanh chóng minh bạch là nền tảng vững chắc để làm việc lâu dài với những khách hàng thân yêu tin tưởng.
         </span>
       </p>
 

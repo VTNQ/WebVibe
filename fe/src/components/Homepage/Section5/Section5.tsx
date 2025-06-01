@@ -57,16 +57,15 @@ export default function Section5() {
   alt={f.title}
   className="mx-auto rounded object-cover h-48 w-auto "
 />
-
             <h3 className="text-xl font-semibold">{f.title}</h3>
             <p className="text-gray-600 text-sm">{f.description}</p>
           </div>
         ))}
       </div>
       <div className="mt-10">
-        <button className="bg-[#67AE6E] text-white px-6 py-2 rounded-full inline-flex items-center hover:bg-gray-800 transition">
+        <button className="bg-[#67AE6E] text-white px-6 py-2 rounded-full inline-block items-center hover:bg-gray-800 transition">
 
-          <Link to="/product" className="hover:text-black">Khám phá thêm  <FaArrowRight className="ml-2" /> </Link>
+          <Link to="/product" className="hover:text-black">Khám phá thêm   </Link>
 
         </button>
       </div>
