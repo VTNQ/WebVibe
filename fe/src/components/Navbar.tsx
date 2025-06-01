@@ -9,7 +9,7 @@ const NavBar = () => {
     <nav className="w-full flex items-center justify-between px-[12%] py-4 shadow-sm bg-[#67AE6E] relative z-50">
       {/* Logo */}
       <Link to="/" className="flex items-center space-x-2 z-10">
-        <img src="/img/homepage/logo1.png" alt="WebVibe Logo" className="h-6" />
+        <img src="/img/homepage/logo1.png" alt="WebVibe Logo" className="h-10" />
       </Link>
 
       {/* Centered Desktop Menu */}
