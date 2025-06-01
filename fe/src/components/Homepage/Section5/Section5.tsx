@@ -63,9 +63,9 @@ export default function Section5() {
         ))}
       </div>
       <div className="mt-10">
-        <button className="bg-[#67AE6E] text-white px-6 py-2 rounded-full inline-block items-center hover:bg-gray-800 transition">
+        <button className="bg-[#67AE6E] text-white px-6 py-2 rounded-full inline-block items-center hover:bg-[#90C67C] transition">
 
-          <Link to="/product" className="hover:text-black">Khám phá thêm   </Link>
+          <Link to="/product" className="">Khám phá thêm   </Link>
 
         </button>
       </div>

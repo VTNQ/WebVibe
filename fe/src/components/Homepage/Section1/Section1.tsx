@@ -30,7 +30,7 @@ function Section1(){
                         Gia công, thiết kế website với nhu cầu và mục đích sử dụng của doanh nghiệp bạn mong muốn
                         .
                     </p>
-                    <button className="px-6 py-4  flex font-semibold bg-[#67AE6E] text-1xl text-white rounded-md hover:bg-gray-800 transition">
+                    <button className="px-6 py-4  flex font-semibold bg-[#67AE6E] text-1xl text-white rounded-md hover:bg-[#90C67C] transition">
                         Liên hệ thiết kế
                         <i className='ml-2.5  self-center  text-[1.4rem] bx bx-right-arrow-alt'></i>
                     </button>
