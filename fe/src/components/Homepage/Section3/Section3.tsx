@@ -13,25 +13,18 @@ const Section3 = ({onScrollToSection4}) => {
 
   const projects = [
     {
-      image: "/img/product/thoitrang08.webp",
+      image: "/img/motor.png",
       video: "/video/kinpizza.mp4",
       title: "Website Streetwear",
       category: "Bán hàng",
-      link: "http://kinpizza.com/",
+      link: "https://antmotor.vn/",
     },
     {
-      image: "/img/product/thoitrang07.webp",
+      image: "/img/wisdom_robotic.png",
       video: "/video/wisdom.mp4",
       title: "Website Mỹ Phẩm",
       category: "Làm đẹp",
       link: "https://wisdomrobotics.org/",
-    },
-    {
-      image: "/img/homepage/website_bg_makingYourDream.png",
-      video: "/video/marketing.mp4",
-      title: "Website MarkeTing",
-      category: "Marketing",
-      link: "https://marketing.wisdombrain.org/home",
     },
     {
       image: "/img/homepage/website_bg_pizza.png",

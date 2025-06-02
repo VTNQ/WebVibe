@@ -18,13 +18,13 @@ const Section2 = () => {
           Passion. Dedication. Community.
         </p>
         <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-snug">
-          We Are Team Avada
+          We Are Team WebVibe
         </h2>
         <p className="text-white text-lg md:text-xl leading-relaxed mb-8">
-          We are a creative and dedicated team who love WordPress, our customers, and the online
-          community. Since 2012, we’ve been crafting the ultimate website builder — and{' '}
+          We are a creative and dedicated team who love tech, our customers, and the online
+          community. Since 2024, we’ve been crafting the ultimate website builder — and{' '}
           <a href="#" className="text-blue-700 underline font-medium hover:text-blue-900 transition">
-            Avada
+            WebVibe
           </a>{' '}
           was born.
         </p>
@@ -33,7 +33,7 @@ const Section2 = () => {
           href="#"
           className="inline-flex items-center bg-[#256d4d] hover:bg-[#1f5d41] text-white font-semibold px-6 py-3 rounded-lg transition duration-200 shadow-lg"
         >
-          Buy Avada $69 →
+          Contact Here →
         </a>
       </div>
     </section>

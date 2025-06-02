@@ -4,6 +4,7 @@ import {
     FaInstagram,
     FaYoutube,
 } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -21,24 +22,19 @@ const Footer = () => {
                 </div>
 
                 {/* Support Links */}
-                <div>
-                    <h3 className="text-white font-semibold text-base mb-2">Support</h3>
-                    <ul className="space-y-1 text-sm">
-                        {["Help Center", "Avada Studio", "Prebuilt Websites", "Reviews", "Submit A Ticket"].map((item, index) => (
-                            <li key={index} className="hover:text-green-500 cursor-pointer">
-                                {item}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+
 
                 {/* Company Links */}
                 <div>
                     <h3 className="text-white font-semibold text-base mb-2">Company</h3>
                     <ul className="space-y-1 text-sm">
-                        {["About Us", "Careers", "Support Policy", "Terms And Conditions", "Privacy Policy"].map((item, index) => (
+                        {[
+                            { label: "Live Product", href: "/product" },
+                            { label: "Contact", href: "/contact" },
+                            { label: "About Us", href: "/aboutUs" },
+                        ].map((item, index) => (
                             <li key={index} className="hover:text-green-500 cursor-pointer">
-                                {item}
+                                <Link to={item.href}>{item.label}</Link>
                             </li>
                         ))}
                     </ul>
