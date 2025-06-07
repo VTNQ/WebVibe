@@ -17,7 +17,7 @@ const reviews = [
     name: "MONICA FIELDS, VOGUE",
   },
   {
-    image: "/img/Moderno",
+    image: "/img/Moderno/HomePage/ricky-2132323454-145x145.jpg",
     text: "High quality and very professional service. Highly recommended.",
     name: "JANE DOE, MARIE CLAIRE",
   },

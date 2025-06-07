@@ -12,9 +12,9 @@ const summerDiscountData = {
       category: "Trendy",
       name: "Sunglasses 2023",
       images: [
-        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556306535-38febf678080?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        "img/Moderno/HomePage/ricky-2127760710.jpg",
+        "img/Moderno/HomePage/ricky-2105975080-600x929.jpg",
+        "img/Moderno/HomePage/ricky-2125700451-600x929.jpg"
       ],
       buttonText: "SHOP NOW"
     },
@@ -23,9 +23,9 @@ const summerDiscountData = {
       category: "Trendy",
       name: "Sunglasses 2023",
       images: [
-        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556306535-38febf678080?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        "img/Moderno/HomePage/ricky-2127760710.jpg",
+        "img/Moderno/HomePage/ricky-2105975080-600x929.jpg",
+        "img/Moderno/HomePage/ricky-2125700451-600x929.jpg"
       ],
       buttonText: "SHOP NOW"
     },
@@ -34,9 +34,9 @@ const summerDiscountData = {
       category: "Trendy",
       name: "Sunglasses 2023",
       images: [
-        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1556306535-38febf678080?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        "img/Moderno/HomePage/ricky-2127760710.jpg",
+        "img/Moderno/HomePage/ricky-2105975080-600x929.jpg",
+        "img/Moderno/HomePage/ricky-2125700451-600x929.jpg"
       ],
       buttonText: "SHOP NOW"
     }
