@@ -337,6 +337,7 @@ function ProductCard({ product }) {
             </div>
             {/* Buttons */}
             <div
+
                 className={`flex absolute bottom-[23%] left-4 right-4  gap-2  transition-all duration-300 ${
                     isHovered ? "opacity-100" : "opacity-0"
                 } `}
