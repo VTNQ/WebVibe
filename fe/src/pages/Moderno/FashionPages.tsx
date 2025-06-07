@@ -1,3 +1,5 @@
+import AutoScrollBanner from "@/components/Moderno/HomePage/AutoScrollBanerr";
+import BigSaleComponent from "@/components/Moderno/HomePage/BigSaleComponent";
 import HeroSlider from "@/components/Moderno/HomePage/HeroSlider";
 import NavBar from "@/components/Moderno/Navbar";
 import { Outlet, useLocation } from "react-router-dom";
@@ -11,7 +13,14 @@ const FashionPage = () => {
   return (
     <>
       <NavBar />
-      {isFashionRoot && <HeroSlider />}
+      {isFashionRoot && (
+        <>
+          <HeroSlider />
+          <AutoScrollBanner />
+          <BigSaleComponent/>
+        </>
+      )}
+
       <Outlet />
     </>
   );
