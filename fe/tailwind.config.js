@@ -13,7 +13,8 @@ module.exports = {
 				roboto: [
 					'Roboto',
 					'sans-serif'
-				]
+				],
+				manrope: ['Manrope', 'sans-serif'],
 			},
 			backgroundImage: {
 				'web4s-hover': 'linear-gradient(90deg, #0D5DD6 0%, #9747FF 100%)',
