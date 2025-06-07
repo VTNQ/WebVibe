@@ -7,12 +7,11 @@ const Section1 = () => {
     {
       question: "Lợi ích của việc thiết kế website là gì?",
       answer:
-        "Website là bộ mặt đại diện cho một doanh nghiệp. Việc sở hữu một website giúp doanh nghiệp trở nên chuyên nghiệp hơn và dễ tiếp cận khách hàng trong thời đại công nghệ 4.0.",
+        "Website là bộ mặt đại diện cho một doanh nghiệp, việc bạn so hữu một website sẽ khiến doanh nghiệp của bạn chuyên nghiệp hơn cũng như có thể dễ dàng tiếp cận với khách hàng trong thời buổi công nghệ 4.0.",
     },
     {
-      question: "Giá thiết kế website tại WebVibe khoảng bao nhiêu?",
-      answer:
-        "Tùy theo yêu cầu, mức giá thiết kế website tại WebVibe thường bắt đầu từ 3 triệu đồng. Với chức năng phức tạp, giá sẽ được điều chỉnh hợp lý.",
+      question: "Giá thiết kế website tại WebVibe khoảng bao nhiêu ?",
+      answer: "Tùy thuộc vào mức độ và nhu cầu, chúng tôi cung cấp các mức giá phải chăng và đảm bảo rẻ nhất thị trường nhưng cũng không kém phần chất lượng và đầu ra hiệu quả, mức giá thông thường là 3 triệu trở lên, trong trường hợp có nhiều chức năng phức tạp , chúng tôi sẽ đưa ra mức giá hợp lý nhất.",
     },
     {
       question: "Dịch vụ chăm sóc (quản trị) website là gì?",
@@ -25,9 +24,8 @@ const Section1 = () => {
         "Chúng tôi luôn có đội ngũ hỗ trợ tư vấn, làm việc cùng bạn để đảm bảo sản phẩm đầu ra chất lượng và phù hợp với nghiệp vụ.",
     },
     {
-      question: "Mức giá cho một website cơ bản từ A đến Z tại WebVibe?",
-      answer:
-        "Chi phí trung bình để hoàn thành một website cơ bản là từ 6–7 triệu đồng, bao gồm cả thiết kế và triển khai vận hành.",
+      question: "Mức giá cho một website cơ bản từ a tới z tại WebVibe",
+      answer: "Nếu bạn chưa có mã nguồn của giao diện web, chúng tôi nhận thiết kế với mức giá 3 triệu, cộng với chi phí để thực hiện đưa vào hoạt động thì tổng chi phí dao động từ khoảng 6-7 triệu cho một website cơ bản.",
     },
   ];
 
