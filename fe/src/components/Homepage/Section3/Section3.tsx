@@ -11,26 +11,33 @@ const Section3 = ({onScrollToSection4}) => {
     { label: "Web bất động sản", percent: 12 },
   ];
 
+  // name: "Website nội thất",
+  //     price: "4,000,000 VND",
+  //     category: "Nội thất",
+  //     img: "/img/homepage/website_bg_makingYourDream.png",
+  //     features: ["Xem thực tế", "Dùng thử"],
+  //     link: 'https://wisdomconstruction.wisdombrain.org/'
+
   const projects = [
     {
-      image: "/img/motor.png",
+      image: "/img/homepage/website_bg_makingYourDream.png",
       video: "/video/kinpizza.mp4",
-      title: "Website Streetwear",
+      title: "Website Nội thất",
       category: "Bán hàng",
-      link: "https://antmotor.vn/",
+      link: "https://wisdomconstruction.wisdombrain.org/",
     },
     {
       image: "/img/wisdom_robotic.png",
       video: "/video/wisdom.mp4",
-      title: "Website Mỹ Phẩm",
-      category: "Làm đẹp",
+      title: "Website Giải pháp công nghệ",
+      category: "Dịch vụ",
       link: "https://wisdomrobotics.org/",
     },
     {
       image: "/img/homepage/website_bg_pizza.png",
       video: "/video/construction.mp4",
-      title: "Website Quảng Bá",
-      category: "Quảng Bá",
+      title: "Website Pizza ",
+      category: "Bán hàng",
       link: "https://wisdomconstruction.wisdombrain.org/",
     },
   ];
