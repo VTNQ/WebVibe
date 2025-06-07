@@ -2,6 +2,8 @@ import {useState} from "react";
 import { MdRemoveRedEye } from "react-icons/md";
 import { VscListSelection } from "react-icons/vsc";
 import { CiHeart } from "react-icons/ci";
+import { IoIosArrowForward } from "react-icons/io";
+import Swal from 'sweetalert2';
 
 const ProductPage=()=>{
     const [isHovered, setIsHovered] = useState(false);
@@ -79,15 +81,143 @@ const ProductPage=()=>{
                 "A pair of pockets is often the best thing a dress can offer, and when they appear with the iconic Valentino logo, they really reach perfection.",
             price: "$6,500.00",
             img: "/img/Moderno/ProductsPage/Products/product4.jpg",
-            imgHover: "/img/Moderno/ProductsPage/Products/product4-4.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product4-4.png",
             tags: [
                 { label: "BEST SELLER", type: "highlight" },
                 { label: "-4%", type: "discount" },
             ],
         },
+        {
+            id: 5,
+            brand: "STELLA MCCARTNEY",
+            name: "Crystal Embellished Cutout Pleated Satin Maxi Dress",
+            description:
+                "McCartney leans into her eponymous label’s origins with early aughts–inspired pieces like this pleated satin maxi dress with cutouts and a crystal-wrapped belt.",
+            price: "$14,000.00",
+            img: "/img/Moderno/ProductsPage/Products/product5.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product5-5.png",
+            tags: [
+
+                { label: "-10%", type: "discount" },
+            ],
+        },
+        {
+            id: 6,
+            brand: "MISSONI",
+            name: "Zigzag Lamé Sleeveless Maxi Dress",
+            description:
+                "Missoni’s famed zigzag motif is set off with chic shimmer on this figure-following maxi with shoulder-baring cutaways and a thigh-high back slit.",
+            price: "$9,500.00",
+            img: "/img/Moderno/ProductsPage/Products/product6.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product6-6.png",
+            tags: [
+
+                { label: "-10%", type: "discount" },
+            ],
+        },
+        {
+            id: 7,
+            brand: "THE ROW",
+            name: "Janita Wool Blend Tunic Dress",
+            description:
+                "Each of the four fibers comprising this dress makes a noticeable contribution to its texture, drape, sheen and comfort, making this a staple for the season.",
+            price: "$5,500.00",
+            img: "/img/Moderno/ProductsPage/Products/product7.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product7-7.png",
+            tags: [
+
+                { label: "-10%", type: "discount" },
+            ],
+        },
+        {
+            id: 8,
+            brand: "ZELLA",
+            name: "Excursion Hooded Long Sleeve Dress",
+            description:
+                "Keep moving all day long in this hooded dress featuring princess seams down the front and thumbhole cuffs that keep long sleeves securely in place.",
+            price: "$180.00",
+            img: "/img/Moderno/ProductsPage/Products/product8.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product8-8.png",
+            tags: [
+
+                { label: "-10%", type: "discount" },
+            ],
+        },
+
+        {
+            id: 9,
+            brand: "VALENTINO",
+            name: "V Logo Pocket Wool & Silk Dress",
+            description:
+                "A pair of pockets is often the best thing a dress can offer, and when they appear with the iconic Valentino logo, they really reach perfection.",
+            price: "$6,500.00",
+            img: "/img/Moderno/ProductsPage/Products/product4.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product4-4.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-4%", type: "discount" },
+            ],
+        },
+
+        // Thêm bao nhiêu sản phẩm tùy ý...
+
+        {
+            id: 10,
+            brand: "PRADA",
+            name: "Cutout Waist Long Sleeve Jersey Gown",
+            description:
+                "An oversized rosette unites the two halves of this arresting ruched gown sewn from crepe-textured jersey.",
+            price: "$4,700.00",
+            img: "/img/Moderno/ProductsPage/Products/product3.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product3-3.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-4%", type: "discount" },
+            ],
+        },
+        {
+            id: 11,
+            brand: "BURBERRY",
+            name: "Sweetheart Strapless Lamé Silk Blend Gown",
+            description:
+                "Gathers and plissé pleating multiply the shimmer radiating from this strapless gown styled with a twist-detail sweetheart neck from a perfect-drape silk blend.",
+            price: "$2,500.00",
+            img: "/img/Moderno/ProductsPage/Products/product2.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product2-2.png",
+            tags: [{ label: "-13%", type: "discount" }],
+        },
+        {
+            id: 12,
+            brand: "PRADA",
+            name: "Crossback Halter Dress",
+            description:
+                "A shapely halter dress designed with slinky crossback straps and a leg-baring slit is an elegant option for your upcoming event",
+            price: "$2,400.00 – $2,650.00",
+            img: "/img/Moderno/ProductsPage/Products/product1.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product1-1.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-4%", type: "discount" },
+            ],
+        },
+
     ];
 
+    const handleClick = (categoryName) => {
+        console.log("clicke",categoryName);
+        if (categoryName === 'WOMEN') {
+            setActiveCategory(categoryName);
+        } else {
+            Swal.fire({
+                icon: 'info',
+                title: 'Thông báo',
+                text: 'Chức năng này chưa khả dụng!',
+                confirmButtonText: 'Đã hiểu',
+            });
+        }
+    };
 
+    const [activeCategory, setActiveCategory] = useState("WOMEN");
     return(
         <>
             <div className="flex justify-between items-center px-5 py-1 border-b border-gray-200 text-[0.58rem] text-[#838383]">
@@ -115,13 +245,30 @@ const ProductPage=()=>{
                 <div className="flex ">
 
                     {categories.map((category) => (
-                        <div key={category.id} className="flex flex-col justify-between items-center">
-                            <div className="border border-gray-300 focus:outline-none">
-                                <img className="w-auto h-[4rem] sm:h-[6rem] md:h-[8rem] lg:h-[10rem]" src={category.img}></img>
+                        <div
+                            key={category.id}
+                            className="flex flex-col justify-between items-center cursor-pointer"
+                            onClick={() => handleClick(category.nameCategories)}
+                        >
+                            <div
+                                className={`border transition-all duration-300 ${
+                                    activeCategory === category.nameCategories
+                                        ? 'border-black'
+                                        : 'border-gray-300'
+                                }`}
+                            >
+                                <img
+                                    className="w-auto h-[4rem] sm:h-[6rem] md:h-[8rem] lg:h-[10rem]"
+                                    src={category.img}
+                                    alt={category.nameCategories}
+                                />
                             </div>
-                            <h2 className="mt-2 text-[12px] text-[#454545]">{category.nameCategories}</h2>
+                            <h2 className="mt-2 text-[12px] text-[#454545]">
+                                {category.nameCategories}
+                            </h2>
                         </div>
                     ))}
+
 
                 </div>
 
@@ -135,8 +282,16 @@ const ProductPage=()=>{
                     ))}
 
                 </div>
-                <div className="navigator">
+                <div className="navigator  h-[10rem] flex items-center justify-center items-center ">
+                    <div className="flex justify-center items-center space-x-1 ">
+                        <div className="bg-black text-white px-6 py-[1.1rem] rounded-[50%] text-[0.75rem] font-basier">1</div>
+                        <div className="bg-white border border-black text-black px-6 py-[1.1rem] rounded-[50%] text-[0.75rem] font-basier hover:bg-[#FC5F49] hover:border-none hover:text-white transition-all duration-200">2</div>
+                        <div className="bg-white border border-black text-black px-6 py-[1.1rem] rounded-[50%] text-[0.75rem] font-basier hover:bg-[#FC5F49] hover:border-none hover:text-white transition-all duration-200">3</div>
+                        <div className="bg-white border border-black text-black px-[1.3rem] py-[1.3rem] rounded-[50%] text-[0.75rem] font-basier hover:bg-[#FC5F49] hover:border-none hover:text-white transition-all duration-200"><IoIosArrowForward /></div>
 
+
+
+                    </div>
                 </div>
 
             </section>
@@ -150,15 +305,15 @@ function ProductCard({ product }) {
 
     return (
         <div
-            className="relative  card flex flex-col bg-white border border-gray-200 group hover:border-black"
+            className="relative  card flex flex-col bg-white border border-gray-200 group hover:border-black "
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <div className="image-frame bg-white group-hover:bg-gray-200 transition-colors duration-300">
+            <div className="image-frame bg-white group-hover:bg-gray-200 transition-colors duration-300 ">
                 <img
                     src={isHovered ? product.imgHover : product.img}
                     alt={product.name}
-                    className="w-full h-auto transition duration-300"
+                    className="w-full h-auto transition-all duration-300"
                 />
             </div>
             {/* Tags hiển thị góc trên phải */}
@@ -181,7 +336,7 @@ function ProductCard({ product }) {
             </div>
             {/* Buttons */}
             <div
-                className={`absolute bottom-[21%] left-0 w-full flex transition-all duration-300 ${
+                className={`absolute bottom-[23%] left-0 w-full flex transition-all duration-300 ${
                     isHovered ? "opacity-100" : "opacity-0"
                 } bg-white`}
             >
