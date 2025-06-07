@@ -6,6 +6,29 @@ import { CiHeart } from "react-icons/ci";
 const ProductPage=()=>{
     const [isHovered, setIsHovered] = useState(false);
 
+    const categories = [
+        {
+            id: 1,
+            nameCategories: "WOMEN",
+            img: "/public/img/Moderno/ProductsPage/woman.webp"
+        },
+        {
+            id: 2,
+            nameCategories: "MEN",
+            img: "/public/img/Moderno/ProductsPage/man.webp"
+        },
+        {
+            id: 3,
+            nameCategories: "KIDS",
+            img: "/public/img/Moderno/ProductsPage/kids.webp"
+        },
+        {
+            id: 4,
+            nameCategories: "ACCESSORIES",
+            img: "/public/img/Moderno/ProductsPage/jewerly.webp"
+        },
+    ]
+
     const products = [
         {
             id: 1,
@@ -25,27 +48,24 @@ const ProductPage=()=>{
         // Thêm bao nhiêu sản phẩm tùy ý...
         {
             id: 2,
-            brand: "PRADA",
-            name: "Crossback Halter Dress",
+            brand: "BURBERRY",
+            name: "Sweetheart Strapless Lamé Silk Blend Gown",
             description:
-                "A shapely halter dress designed with slinky crossback straps and a leg-baring slit is an elegant option for your upcoming event",
-            price: "$2,400.00 – $2,650.00",
-            img: "/img/Moderno/ProductsPage/Products/product1.jpg",
-            imgHover: "/img/Moderno/ProductsPage/Products/product1-1.png",
-            tags: [
-                { label: "BEST SELLER", type: "highlight" },
-                { label: "-4%", type: "discount" },
-            ],
+                "Gathers and plissé pleating multiply the shimmer radiating from this strapless gown styled with a twist-detail sweetheart neck from a perfect-drape silk blend.",
+            price: "$2,500.00",
+            img: "/img/Moderno/ProductsPage/Products/product2.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product2-2.png",
+            tags: [{ label: "-13%", type: "discount" }],
         },
         {
             id: 3,
             brand: "PRADA",
-            name: "Crossback Halter Dress",
+            name: "Cutout Waist Long Sleeve Jersey Gown",
             description:
-                "A shapely halter dress designed with slinky crossback straps and a leg-baring slit is an elegant option for your upcoming event",
-            price: "$2,400.00 – $2,650.00",
-            img: "/img/Moderno/ProductsPage/Products/product1.jpg",
-            imgHover: "/img/Moderno/ProductsPage/Products/product1-1.png",
+                "An oversized rosette unites the two halves of this arresting ruched gown sewn from crepe-textured jersey.",
+            price: "$4,700.00",
+            img: "/img/Moderno/ProductsPage/Products/product3.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product3-3.png",
             tags: [
                 { label: "BEST SELLER", type: "highlight" },
                 { label: "-4%", type: "discount" },
@@ -53,13 +73,13 @@ const ProductPage=()=>{
         },
         {
             id: 4,
-            brand: "PRADA",
-            name: "Crossback Halter Dress",
+            brand: "VALENTINO",
+            name: "V Logo Pocket Wool & Silk Dress",
             description:
-                "A shapely halter dress designed with slinky crossback straps and a leg-baring slit is an elegant option for your upcoming event",
-            price: "$2,400.00 – $2,650.00",
-            img: "/img/Moderno/ProductsPage/Products/product1.jpg",
-            imgHover: "/img/Moderno/ProductsPage/Products/product1-1.png",
+                "A pair of pockets is often the best thing a dress can offer, and when they appear with the iconic Valentino logo, they really reach perfection.",
+            price: "$6,500.00",
+            img: "/img/Moderno/ProductsPage/Products/product4.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/product4-4.jpg",
             tags: [
                 { label: "BEST SELLER", type: "highlight" },
                 { label: "-4%", type: "discount" },
@@ -71,15 +91,15 @@ const ProductPage=()=>{
     return(
         <>
             <div className="flex justify-between items-center px-5 py-1 border-b border-gray-200 text-[0.58rem] text-[#838383]">
-                <div className="font-medium ">
+                <div className="font-medium font-basier">
                     SHOWING 1–24 OF 64 RESULTS
                 </div>
 
-                <div className="text-[0.58rem] text-[#838383] font-medium hidden md:block">
+                <div className="text-[0.58rem] text-[#838383] font-medium hidden font-basier md:block">
                     HOME &gt; SHOP
                 </div>
 
-                <div className=" flex items-center gap-3">
+                <div className=" flex items-center gap-3 font-basier">
                     <select className="text-[0.7rem] border border-gray-300 rounded px-2 py-1 focus:outline-none">
                         <option>Default Sorting</option>
                         <option>Price: Low to High</option>
@@ -90,25 +110,25 @@ const ProductPage=()=>{
                 </div>
             </div>
 
-            <section className="flex justify-between items-center mt-5">
-                <h1>SHOP</h1>
+            <section className="flex font-basier flex-col gap-3 justify-between items-center mt-5 px-[30px] md:flex-row">
+                <h1 className="text-[24px] text-[#070707]">SHOP</h1>
                 <div className="flex ">
-                    <div className="">
-                        <div className="border border-gray-300 focus:outline-none">
-                            <img className="" src="/public/img/Moderno/ProductsPage/woman.webp"></img>
+
+                    {categories.map((category) => (
+                        <div key={category.id} className="flex flex-col justify-between items-center">
+                            <div className="border border-gray-300 focus:outline-none">
+                                <img className="w-auto h-[4rem] sm:h-[6rem] md:h-[8rem] lg:h-[10rem]" src={category.img}></img>
+                            </div>
+                            <h2 className="mt-2 text-[12px] text-[#454545]">{category.nameCategories}</h2>
                         </div>
-                        <h2>WOMEN</h2>
-                    </div>
-                    <div className="">
-                        <div className="border border-gray-300 focus:outline-none">
-                            <img className="" src="/public/img/Moderno/ProductsPage/woman.webp"></img>
-                        </div>
-                        <h2>WOMEN</h2>
-                    </div>
+                    ))}
+
                 </div>
+
+
             </section>
 
-            <section className="mt-5 bg-red-50">
+            <section className="mt-5  font-basier">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4    ">
                     {products.map((product) => (
                         <ProductCard key={product.id} product={product} />
@@ -130,7 +150,7 @@ function ProductCard({ product }) {
 
     return (
         <div
-            className="relative card flex flex-col bg-white border border-gray-200 group hover:border-black"
+            className="relative  card flex flex-col bg-white border border-gray-200 group hover:border-black"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -184,15 +204,15 @@ function ProductCard({ product }) {
             </div>
 
             {/* Info */}
-            <div className="py-2 px-4">
-                <h1 className="text-[11px] text-[#070707] mt-2">{product.brand}</h1>
-                <h2 className="text-[14px] font-normal text-[#070707] mt-2">
+            <div className="py-2 px-4 ">
+                <h1 className="text-[11px] text-[#070707] font-basier mt-2">{product.brand}</h1>
+                <h2 className="text-[14px] font-normal font-basier text-[#070707] mt-2">
                     {product.name}
                 </h2>
-                <h4 className="text-[12px] text-[#454545] mt-2">
+                <h4 className="text-[12px] font-basier text-[#454545] mt-2">
                     {product.description}
                 </h4>
-                <h3 className="text-[12px] mt-2 mb-2">{product.price}</h3>
+                <h3 className="text-[12px] mt-2 font-basier mb-2">{product.price}</h3>
             </div>
         </div>
     );
