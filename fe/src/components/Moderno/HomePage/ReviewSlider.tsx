@@ -17,7 +17,7 @@ const reviews = [
     name: "MONICA FIELDS, VOGUE",
   },
   {
-    image: "/img/Moderno",
+    image: "/img/Moderno/HomePage/ricky-2132323454-145x145.jpg",
     text: "High quality and very professional service. Highly recommended.",
     name: "JANE DOE, MARIE CLAIRE",
   },
@@ -53,10 +53,10 @@ const ReviewSlider = () => {
       {/* Brand logos under review */}
       <div className="flex justify-center flex-wrap items-center gap-10 mt-20">
         <img src="/img/Moderno/HomePage/ricky-2136507208-e1682433504388.webp" alt="PRADA" className="h-6" />
-        <img src="/img/logo-burberry.png" alt="BURBERRY" className="h-6" />
-        <img src="/img/logo-dolce.png" alt="DOLCE & GABBANA" className="h-6" />
-        <img src="/img/logo-hugo.png" alt="HUGO BOSS" className="h-6" />
-        <img src="/img/logo-lafayette.png" alt="LAFAYETTE 148" className="h-6" />
+        <img src="/img/Moderno/HomePage/moderno-2531698434.webp" alt="BURBERRY" className="h-6" />
+        <img src="/img/Moderno/HomePage/moderno-2531767109.webp" alt="DOLCE & GABBANA" className="h-6" />
+        <img src="/img/Moderno/HomePage/moderno-2531627479.webp" alt="HUGO BOSS" className="h-6" />
+        <img src="/img/Moderno/HomePage/moderno-2531959934.webp" alt="LAFAYETTE 148" className="h-6" />
       </div>
     </div>
   );
