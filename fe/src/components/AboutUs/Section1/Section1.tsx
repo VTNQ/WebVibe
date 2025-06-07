@@ -99,7 +99,6 @@ const Section1 = () => {
           </div>
         </div>
 
-
         {/* Right Content */}
         <div className="relative flex justify-end items-center">
           <img
