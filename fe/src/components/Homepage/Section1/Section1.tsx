@@ -1,10 +1,11 @@
 
+import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
 
-function Section1(){
+function Section1() {
 
 
-    return(
+    return (
         <div className=" bg-white flex items-center justify-center px-4 py-1 ">
             <div className="max-w-7xl w-full grid lg:grid-cols-[36%_65%] md:grid-cols-[40%_60%] gap-12 items-center">
 
@@ -14,28 +15,38 @@ function Section1(){
                         Thiết kế <br />
 
                         <Typewriter
-                            words={['Creative', 'Portfolio', 'E-commerce', 'Booking','Blog','Landing Page','Educational ']}
+                            words={[
+                                'Creative',
+                                'Portfolio',
+                                'E-commerce',
+                                'Booking',
+                                'Blog',
+                                'Landing Page',
+                                'Educational'
+                            ]}
                             loop={true}
                             cursor
-                            cursorStyle='|'
+                            cursorStyle="|"
                             typeSpeed={60}
                             deleteSpeed={50}
                             delaySpeed={1400}
-
                         />
                         <br />
                         Website Builder
                     </h1>
-                    <p className="text-gray-600 max-w-md mb-8 text-[1.1rem] md:text-[1.2rem]">
-                        Gia công, thiết kế website với nhu cầu và mục đích sử dụng của doanh nghiệp bạn mong muốn
-                        .
-                    </p>
-                    <button className="px-6 py-4  flex font-semibold bg-[#67AE6E] text-1xl text-white rounded-md hover:bg-[#90C67C] transition">
-                        Liên hệ thiết kế
-                        <i className='ml-2.5  self-center  text-[1.4rem] bx bx-right-arrow-alt'></i>
-                    </button>
 
-                    <img className="w-[70%] " src="/public/img/homepage/pencil_line.png" alt=""/>
+                    <p className="text-gray-600 max-w-md mb-8 text-[1.1rem] md:text-[1.2rem]">
+                        Gia công, thiết kế website với nhu cầu và mục đích sử dụng của doanh nghiệp bạn mong muốn.
+                    </p>
+
+                    <Link to="/contact" className="inline-block mt-4">
+                        <button className="px-6 py-4 flex items-center font-semibold bg-[#67AE6E] text-1xl text-white rounded-md hover:bg-[#90C67C] transition">
+                            Liên hệ thiết kế
+                            <i className="ml-2.5 self-center text-[1.4rem] bx bx-right-arrow-alt"></i>
+                        </button>
+                    </Link>
+
+                    <img className="w-[70%] " src="/public/img/homepage/pencil_line.png" alt="" />
                     <div className="flex space-x-12 mt-10 text-center">
                         <div className="fl  ex flex-col items-start">
                             <p className="text-3xl font-bold text-[#67AE6E]">20+</p>
@@ -50,7 +61,7 @@ function Section1(){
 
                 <div className="relative flex justify-center">
                     <img
-                       src="/public/img/homepage/bg3.png"
+                        src="/public/img/homepage/bg3.png"
                         alt="Website Builder UI"
                         className="  w-full max-w-[1400px] h-auto"
                     />

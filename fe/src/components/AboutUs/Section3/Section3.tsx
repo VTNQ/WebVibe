@@ -7,7 +7,7 @@ const Section3 = () => {
       <div className="mb-8">
         <div className="w-24 h-24 mx-auto rounded-full shadow-lg bg-[#6cbf7e] flex items-center justify-center">
           <img
-            src="/img/homepage/logo1.png"
+            src="/img/home++page/logo1.png"
             alt="WebVibe Logo"
             className="w-20 h-20 object-contain"
           />
