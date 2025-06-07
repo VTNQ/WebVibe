@@ -1,6 +1,10 @@
 import AutoScrollBanner from "@/components/Moderno/HomePage/AutoScrollBanerr";
 import BigSaleComponent from "@/components/Moderno/HomePage/BigSaleComponent";
+import CategoryGrid from "@/components/Moderno/HomePage/CategoryGrid";
 import HeroSlider from "@/components/Moderno/HomePage/HeroSlider";
+import MissionStatement from "@/components/Moderno/HomePage/MissionStatement";
+import ReviewSlider from "@/components/Moderno/HomePage/ReviewSlider";
+import SummerDiscount from "@/components/Moderno/HomePage/SummerDiscount ";
 import NavBar from "@/components/Moderno/Navbar";
 import { Outlet, useLocation } from "react-router-dom";
 
@@ -18,6 +22,11 @@ const FashionPage = () => {
           <HeroSlider />
           <AutoScrollBanner />
           <BigSaleComponent/>
+          <SummerDiscount/>
+          <MissionStatement/>
+          <CategoryGrid/>
+          <ReviewSlider/>
+          <AutoScrollBanner />
         </>
       )}
 
