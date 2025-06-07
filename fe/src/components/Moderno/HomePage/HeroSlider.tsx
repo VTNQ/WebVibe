@@ -16,21 +16,21 @@ const HeroSlider = () => {
         "Introducing the new fashion summer collection, featuring bold and bright colors, playful prints, and comfortable yet stylish pieces perfect for any occasion. From oversized blazer dresses to monochromatic denim pieces, this collection has something for everyone.",
       buttonText: "SHOP NOW",
       // Note: Make sure this image path is correct in your project
-      image: "/img/Fashion/ricky-2131549808.jpg",
+      image: "/img/Moderno/ricky-2131549808.jpg",
     },
     {
       title: "New Arrivals",
       description:
         "Step into style with our latest arrivals. Discover effortless looks that blend comfort and fashion perfectly.",
       buttonText: "DISCOVER",
-      image: "/images/slide-2.png",
+      image: "/img/Moderno/ricky-2127760710.jpg",
     },
     {
       title: "Exclusive Deals",
       description:
         "Don’t miss out on our limited-time exclusive offers. Shop now and save big on your favorite items.",
       buttonText: "SEE DEALS",
-      image: "/images/slide-3.png",
+      image: "/img/Moderno/ricky-2131286131.jpg",
     },
   ];
 
