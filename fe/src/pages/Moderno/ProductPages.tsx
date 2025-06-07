@@ -282,6 +282,7 @@ const ProductPage=()=>{
                     ))}
 
                 </div>
+
                 <div className="navigator  h-[10rem] flex items-center justify-center items-center ">
                     <div className="flex justify-center items-center space-x-1 ">
                         <div className="bg-black text-white px-6 py-[1.1rem] rounded-[50%] text-[0.75rem] font-basier">1</div>
