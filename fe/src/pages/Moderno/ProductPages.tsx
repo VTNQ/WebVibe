@@ -1,5 +1,5 @@
-import {useState} from "react";
-import { MdRemoveRedEye } from "react-icons/md";
+import React, {useState} from "react";
+import {MdAddShoppingCart, MdRemoveRedEye} from "react-icons/md";
 import { VscListSelection } from "react-icons/vsc";
 import { CiHeart } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
@@ -338,16 +338,15 @@ function ProductCard({ product }) {
             </div>
             {/* Buttons */}
             <div
-                className={`absolute bottom-[23%] left-0 w-full flex transition-all duration-300 ${
+                className={`absolute bottom-[23%] gap-2 left-4 right-4 flex transition-all duration-300 ${
                     isHovered ? "opacity-100" : "opacity-0"
-                } bg-white`}
+                }`}
             >
-                <button className="w-1/2 py-2 text-sm border-t border-r border-gray-200 flex items-center justify-center gap-2 hover:bg-gray-100">
+                <button className="flex-1 flex items-center justify-center gap-1 px-4 py-3 text-[12px] font-semibold uppercase tracking-wider text-center bg-white border-none cursor-pointer hover:bg-black hover:text-white transition">
                     <MdRemoveRedEye /> Quick View
                 </button>
-                <button className="w-1/2 py-2 text-sm border-t border-gray-200 flex items-center justify-center gap-2 hover:bg-gray-100">
-                    <VscListSelection />
-                    Select Options
+                <button className="flex-1 flex items-center justify-center gap-1 px-4 py-3 text-[12px] font-semibold uppercase tracking-wider text-center bg-white border-none cursor-pointer hover:bg-black hover:text-white transition">
+                    <MdAddShoppingCart /> Add to Cart
                 </button>
             </div>
 
