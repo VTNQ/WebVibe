@@ -4,7 +4,7 @@ import { VscListSelection } from "react-icons/vsc";
 import { CiHeart } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
 import Swal from 'sweetalert2';
-
+import { useNavigate } from "react-router-dom";
 const ProductPage=()=>{
     const [isHovered, setIsHovered] = useState(false);
 
@@ -303,13 +303,14 @@ const ProductPage=()=>{
 
 function ProductCard({ product }) {
     const [isHovered, setIsHovered] = useState(false);
-
+    const navigate = useNavigate();
     return (
         <div
-            className="relative  card flex flex-col bg-white border border-gray-200 group hover:border-black "
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-        >
+              onClick={() => navigate(`/fashion/product/${product.id}`, { state: { product } })}
+              className="relative cursor-pointer card flex flex-col bg-white border border-gray-200 group hover:border-black "
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
             <div className="image-frame bg-white group-hover:bg-gray-200 transition-colors duration-300 ">
                 <img
                     src={isHovered ? product.imgHover : product.img}
