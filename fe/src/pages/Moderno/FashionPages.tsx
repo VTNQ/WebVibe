@@ -1,6 +1,7 @@
 import AutoScrollBanner from "@/components/Moderno/HomePage/AutoScrollBanerr";
 import BigSaleComponent from "@/components/Moderno/HomePage/BigSaleComponent";
 import CategoryGrid from "@/components/Moderno/HomePage/CategoryGrid";
+import FooterFashion from "@/components/Moderno/HomePage/FooterFashion";
 import HeroSlider from "@/components/Moderno/HomePage/HeroSlider";
 import MissionStatement from "@/components/Moderno/HomePage/MissionStatement";
 import ReviewSlider from "@/components/Moderno/HomePage/ReviewSlider";
@@ -27,10 +28,12 @@ const FashionPage = () => {
           <CategoryGrid/>
           <ReviewSlider/>
           <AutoScrollBanner />
+      
         </>
       )}
 
       <Outlet />
+      <FooterFashion/>
     </>
   );
 };

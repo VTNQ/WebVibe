@@ -11,11 +11,9 @@ const HeroSlider = () => {
   const slides = [
     {
       title: "New Suits for Men",
-      // Updated description to match the image
       description:
         "Elevate your wardrobe with the new mens suits collection, featuring timeless designs with a modern twist. Crafted from premium fabrics, this collection offers a range of colors and fits to suit any occasion. Make a statement with sleek and sophisticated style.",
       buttonText: "SHOP NOW",
-      // Note: Make sure this image path is correct in your project
       image: "/img/Moderno/HomePage/ricky-2131549808.jpg",
     },
     {
@@ -50,41 +48,39 @@ const HeroSlider = () => {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         loop={true}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="h-screen" // You can adjust the height if needed
+        className="h-[85vh] md:h-screen mb-4"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            {/* === KEY CHANGE 1: Use a 5-column grid for asymmetrical layout on medium screens and up === */}
-            <div className="grid grid-cols-1 md:grid-cols-5 h-full items-center">
-              {/* Content (takes 2 of 5 columns) */}
-              {/* === KEY CHANGE 2: Assign 2 columns for the text content === */}
-              <div className="md:col-span-2 p-10 md:p-20">
-                <h1 className="
-    text-5xl md:text-7xl
-     mb-6
-    leading-tighter
-    whitespace-normal break-words
-    max-w-lg         
-  "  style={{ fontWeight: '500' }}>
-                  {slide.title}
-                </h1>
-                <p className="text-gray-700 mb-8 text-base md:text-lg break-words">
-                  {slide.description}
-                </p>
-
-                <button className="bg-black text-white px-8 py-4 uppercase tracking-wider hover:bg-red-500 transition duration-300">
-                  {slide.buttonText}
-                </button>
-              </div>
-              {/* Image (takes 3 of 5 columns) */}
-              {/* === KEY CHANGE 3: Assign 3 columns for the image container === */}
-              <div className="h-full md:col-span-3 flex justify-center items-center p-5 md:p-10">
-                {/* === KEY CHANGE 4: Use object-cover to make the image fill its container gracefully === */}
+            <div className="flex flex-col md:grid md:grid-cols-5 h-full">
+              {/* Image (takes full width on mobile, 3/5 columns on md and up) */}
+              <div className="w-full h-1/2 md:h-full md:col-span-3 flex justify-center items-center md:order-2">
                 <img
                   src={slide.image}
                   alt={slide.title}
                   className="w-full h-full object-cover"
                 />
+              </div>
+
+              {/* Content (takes full width on mobile, 2/5 columns on md and up) */}
+              <div className="w-full h-1/2 md:h-full md:col-span-2 flex flex-col justify-center p-5 sm:p-10 md:p-10 lg:p-20 md:order-1">
+                <h1 className="
+                  text-3xl sm:text-4xl md:text-5xl lg:text-7xl
+                  mb-3 sm:mb-4 md:mb-6
+                  leading-tight
+                  whitespace-normal break-words
+                  max-w-xl
+                  font-medium
+                ">
+                  {slide.title}
+                </h1>
+                <p className="text-gray-700 mb-4 sm:mb-6 md:mb-8 text-sm sm:text-base md:text-lg break-words">
+                  {slide.description}
+                </p>
+
+                <button className="self-start bg-black text-white px-6 py-3 sm:px-8 sm:py-4 uppercase tracking-wider hover:bg-red-500 transition duration-300">
+                  {slide.buttonText}
+                </button>
               </div>
             </div>
           </SwiperSlide>
@@ -92,13 +88,12 @@ const HeroSlider = () => {
       </Swiper>
 
       {/* Custom Slide Dots */}
-      {/* This part remains unchanged, but I've fixed a small typo in the className */}
-      <div className="absolute bottom-10 left-10 md:left-20 flex gap-4 z-10">
+      {/* KEY CHANGE: Adjusted bottom and left for mobile to place them closer to the button */}
+      <div className="absolute bottom-[-0.5rem] left-5 sm:left-10 md:bottom-10 md:left-20 flex gap-2 sm:gap-4 z-10">
         {slides.map((_, index) => (
           <div
             key={index}
-            // Typo fix: missing " " in className
-            className="w-8 h-8 relative cursor-pointer"
+            className="w-6 h-6 sm:w-8 sm:h-8 relative cursor-pointer"
             onClick={() => swiperRef.current?.slideToLoop(index)}
           >
             {/* Static Background Circle */}
@@ -123,7 +118,7 @@ const HeroSlider = () => {
                   fill="none"
                   strokeDasharray="125.6"
                   style={{
-                    strokeDashoffset: `calc(125.6 * var(--progress, 1))`, // Set initial progress to 1
+                    strokeDashoffset: `calc(125.6 * var(--progress, 1))`,
                     transition: "stroke-dashoffset 0.1s linear",
                   }}
                 />
@@ -134,7 +129,7 @@ const HeroSlider = () => {
               <circle
                 cx="24"
                 cy="24"
-                r="4" // made dot slightly larger
+                r="4"
                 fill={index === activeIndex ? "#000" : "#ccc"}
               />
             </svg>

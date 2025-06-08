@@ -17,7 +17,6 @@ const products = [
       "/img/Moderno/HomePage/product1-1.png",
     ],
     price: "$2,400.00 - $2,650.00",
-    colors: ["#000", "#2b2b2b", "#563d2d"],
     sale: "-4%",
     tag: "BEST SELLER",
     description:
@@ -28,7 +27,10 @@ const products = [
     category: "WOMEN",
     brand: "VALENTINO",
     name: "V Logo Pocket Wool & Silk Dress",
-    image: "/img/Moderno/HomePage/ricky-2014887241.jpg",
+    image: [
+      "/img/Moderno/HomePage/moderno-2555765914-960x1488.jpg",
+      "/img/Moderno/HomePage/product1-1.png",
+    ],
     price: "$6,500.00",
     oldPrice: "$7,500.00",
     sale: "-13%",
@@ -81,7 +83,7 @@ const BigSaleComponent = () => {
   const filteredProducts = products.filter((p) => p.category === selectedTab);
 
   return (
-    <div className="w-full px-4 py-8">
+    <div className="w-full px-4 py-8 sm:px-6 md:px-10 lg:px-16">
       {/* Tabs */}
       <div className="flex justify-center space-x-4 mb-6">
         {tabs.map((tab) => (
@@ -105,18 +107,24 @@ const BigSaleComponent = () => {
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        slidesPerView={3}
+        slidesPerView={3} // Mặc định cho các màn hình lớn
         spaceBetween={30}
         navigation={true}
         modules={[Navigation]}
         loop={true}
+        breakpoints={{
+          0: { slidesPerView: 1 },          // 1 sản phẩm mỗi slide cho màn hình nhỏ
+          640: { slidesPerView: 2 },        // 2 sản phẩm mỗi slide cho máy tính bảng và màn hình nhỏ
+          768: { slidesPerView: 2 },        // 2 sản phẩm mỗi slide cho iPhone và các thiết bị tương tự
+          1024: { slidesPerView: 3 },       // 3 sản phẩm mỗi slide cho các màn hình lớn hơn
+        }}
         className="mySwiper"
       >
         {filteredProducts.map((product, index) => (
           <SwiperSlide key={index}>
-            <div className="relative group   rounded shadow text-left flex flex-col justify-between min-h-[121vh] border border-transparent hover:border-black transition duration-300">
+            <div className="relative group rounded shadow text-left flex flex-col justify-between h-full min-h-[900px] border border-transparent hover:border-black transition duration-300">
               {/* left */}
-              <div className="bg-white hover:bg-[#F4F4F4] w-full">
+              <div className="bg-white hover:bg-[#F4F4F4] w-full flex-grow">
                 {/* Wishlist */}
                 <div className="absolute top-2 left-2 z-10 opacity-0 group-hover:opacity-100 transition duration-300">
                   <button className="text-gray-400 hover:text-red-500 transition duration-200">
@@ -139,17 +147,17 @@ const BigSaleComponent = () => {
                 </div>
 
                 {/* Image */}
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden h-[350px] sm:h-[450px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
                   {/* Image 1 */}
                   {Array.isArray(product.image) ? (
                     <>
                       <img
                         src={product.image[0]}
                         alt={product.name}
-                        className="w-full h-[1000px] object-cover rounded transition-opacity duration-300 group-hover:opacity-0"
+                        className="w-full h-full object-cover rounded transition-opacity duration-300 group-hover:opacity-0"
                       />
                       {/* Hover Image with white background */}
-                      <div className="absolute top-0 left-0 w-full h-[1000px] bg-white hover:bg-[#F4F4F4] rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute top-0 left-0 w-full h-full bg-white hover:bg-[#F4F4F4] rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <img
                           src={product.image[1]}
                           alt={product.name}
@@ -161,104 +169,40 @@ const BigSaleComponent = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-[1000px] object-cover rounded"
+                      className="w-full h-full object-cover rounded"
                     />
                   )}
 
                   {/* Hover Buttons */}
                   <div className="flex w-full gap-2 absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition duration-300">
-                    <button className="flex-1 flex items-center justify-center gap-1 px-4 py-3 text-[12px] font-semibold uppercase tracking-wider text-center bg-white border-none cursor-pointer hover:bg-black hover:text-white transition">
+                    <button className="flex-1 flex items-center justify-center gap-1 px-2 py-2 sm:px-3 sm:py-3 text-[10px] sm:text-[12px] font-semibold uppercase tracking-wider text-center bg-white border-none cursor-pointer hover:bg-black hover:text-white transition">
                       <MdRemoveRedEye /> Quick View
                     </button>
-                    <button className="flex-1 flex items-center justify-center gap-1 px-4 py-3 text-[12px] font-semibold uppercase tracking-wider text-center bg-white border-none cursor-pointer hover:bg-black hover:text-white transition">
+                    <button className="flex-1 flex items-center justify-center gap-1 px-2 py-2 sm:px-3 sm:py-3 text-[10px] sm:text-[12px] font-semibold uppercase tracking-wider text-center bg-white border-none cursor-pointer hover:bg-black hover:text-white transition">
                       <MdAddShoppingCart /> Add to Cart
                     </button>
                   </div>
                 </div>
-
               </div>
               {/* right */}
-              <div className="p-4">
-                {product.colors && (
-                  <div className="flex justify-start space-x-2 mt-2 mb-1">
-                    {product.colors.map((color, i) => (
-                      <div
-                        key={i}
-                        className="w-5 h-5 rounded-full border border-gray-300"
-                        style={{ backgroundColor: color }}
-                      />
-                    ))}
-                  </div>
-                )}
-
+              <div className="p-4 flex flex-col justify-between flex-grow">
                 {/* Info */}
                 <div>
                   <div className="text-sm font-semibold">{product.brand}</div>
-                  <div className="text-lg font-medium">{product.name}</div>
-                  <p className="text-gray-600 text-sm mt-1">{product.description}</p>
-                  <div className="mt-2">
-                    <span className="font-semibold">{product.price}</span>
+                  <div className="text-xl font-semibold">{product.name}</div>
+                  <div className="mt-2 text-sm text-gray-600">{product.description}</div>
+                  <div className="mt-4 flex justify-between items-center">
+                    <div className="text-xl font-semibold text-gray-900">{product.price}</div>
                     {product.oldPrice && (
-                      <span className="ml-2 text-gray-400 line-through">
-                        {product.oldPrice}
-                      </span>
+                      <div className="text-xs text-gray-400 line-through">{product.oldPrice}</div>
                     )}
                   </div>
-                  {product.sold !== undefined && (
-                    <div className="text-xs text-gray-500 flex justify-between pt-2 border-t mt-2">
-                      <span>SOLD: {product.sold}</span>
-                      <span>AVAILABLE: {product.available}</span>
-                    </div>
-                  )}
                 </div>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Custom Pagination Circles */}
-      <div className="flex gap-4 justify-center mt-6">
-        {Array.from({ length: Math.ceil(filteredProducts.length / 3) }).map((_, groupIndex) => (
-          <div
-            key={groupIndex}
-            className="w-6 h-6 relative cursor-pointer"
-            onClick={() => swiperRef.current?.slideToLoop(groupIndex * 3)}
-          >
-            <svg className="w-full h-full transform -rotate-90" viewBox="0 0 48 48">
-              <circle
-                cx="24"
-                cy="24"
-                r="20"
-                stroke="#ccc"
-                strokeWidth="4"
-                fill="none"
-              />
-              {Math.floor(activeIndex / 3) === groupIndex && (
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="20"
-                  stroke="#000"
-                  strokeWidth="4"
-                  fill="none"
-                  strokeDasharray="125.6"
-                  strokeDashoffset="0"
-                />
-              )}
-            </svg>
-            <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 48 48">
-              <circle
-                cx="24"
-                cy="24"
-                r="4"
-                fill={Math.floor(activeIndex / 3) === groupIndex ? "#000" : "#ccc"}
-              />
-            </svg>
-          </div>
-        ))}
-
-      </div>
     </div>
   );
 };
