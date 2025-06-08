@@ -2,21 +2,21 @@ import React from "react";
 
 const MissionStatement = () => {
   return (
-    <div className="relative p-[16vh] mt-[14vh]">
+    <div className="relative p-[12vh] sm:p-[8vh] md:p-[10vh] mt-[10vh] sm:mt-[6vh] md:mt-[8vh]">
       {/* Background image with overlay */}
       <div
-  className="absolute inset-0 bg-no-repeat bg-center"
-  style={{
-    backgroundImage: 'url("/img/Moderno/HomePage/ricky-2102585885.webp")',
-    backgroundSize: "60%", // 👈 thu nhỏ hình lại
-    backgroundPosition: "center",
-    zIndex: -2
-  }}
-/>
+        className="absolute inset-0 bg-no-repeat bg-center"
+        style={{
+          backgroundImage: 'url("/img/Moderno/HomePage/ricky-2102585885.webp")',
+          backgroundSize: "contain", // Adjust to cover
+          backgroundPosition: "center",
+          zIndex: -2,
+        }}
+      />
 
       <div className="absolute inset-0 bg-white bg-opacity-70 z-[-1]" />
 
-      <div className=" mx-auto text-center">
+      <div className="mx-auto text-center px-4 sm:px-6 md:px-8">
         {/* Icon */}
         <div className="mb-8">
           <svg
@@ -36,21 +36,20 @@ const MissionStatement = () => {
 
         {/* Statement */}
         <p
-  className="text-[44px] leading-[79px] font-medium text-gray-900"
-  style={{
-    letterSpacing: "-0.033em",
-    wordSpacing: "2px"
-  }}
->
-  We believe that every human deserves to feel beautiful and confident,
-  and we are committed to providing you with the best quality and styles
-  that will make you look and feel your best.
-</p>
-
+          className="text-[28px] sm:text-[36px] md:text-[44px] leading-[50px] sm:leading-[56px] md:leading-[79px] font-medium text-gray-900"
+          style={{
+            letterSpacing: "-0.03em",
+            wordSpacing: "2px",
+          }}
+        >
+          We believe that every human deserves to feel beautiful and confident,
+          and we are committed to providing you with the best quality and styles
+          that will make you look and feel your best.
+        </p>
 
         {/* Divider */}
-        <div className="mt-12">
-          <div className="inline-block border-t-2 border-pink-400 w-16"></div>
+        <div className="mt-8 sm:mt-12">
+          <div className="inline-block border-t-2 border-pink-400 w-16 mx-auto"></div>
         </div>
       </div>
     </div>

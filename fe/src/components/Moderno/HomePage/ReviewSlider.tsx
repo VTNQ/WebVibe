@@ -1,9 +1,4 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import React, { useState } from "react";
 
 const reviews = [
   {
@@ -24,41 +19,72 @@ const reviews = [
 ];
 
 const ReviewSlider = () => {
-  return (
-    <div className="w-full py-16 px-4 text-center">
-      <h2 className="text-3xl font-bold mb-12 uppercase">Reviews</h2>
-      <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
-        pagination={{ clickable: true }}
-        loop
-        slidesPerView={1}
-        className="max-w-3xl mx-auto"
-      >
-        {reviews.map((review, index) => (
-          <SwiperSlide key={index}>
-            <div className="border p-8 rounded relative flex flex-col items-center text-center shadow-sm min-h-[250px]">
-              <img
-                src={review.image}
-                alt={review.name}
-                className="w-24 h-24 rounded-full object-cover mb-4"
-              />
-              <p className="text-gray-600 mb-4">{review.text}</p>
-              <p className="font-semibold text-sm">{review.name}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-      {/* Brand logos under review */}
-      <div className="flex justify-center flex-wrap items-center gap-10 mt-20">
-        <img src="/img/Moderno/HomePage/ricky-2136507208-e1682433504388.webp" alt="PRADA" className="h-6" />
-        <img src="/img/Moderno/HomePage/moderno-2531698434.webp" alt="BURBERRY" className="h-6" />
-        <img src="/img/Moderno/HomePage/moderno-2531767109.webp" alt="DOLCE & GABBANA" className="h-6" />
-        <img src="/img/Moderno/HomePage/moderno-2531627479.webp" alt="HUGO BOSS" className="h-6" />
-        <img src="/img/Moderno/HomePage/moderno-2531959934.webp" alt="LAFAYETTE 148" className="h-6" />
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? reviews.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === reviews.length - 1 ? 0 : prev + 1));
+  };
+
+  return (
+    <section className="w-full py-24 bg-white text-center font-manrope">
+      <h2 className="text-4xl font-bold uppercase mb-20 tracking-wide">Reviews</h2>
+
+      <div className="relative max-w-6xl mx-auto px-6">
+        <div className="border border-gray-300 px-16 py-12 rounded-lg flex items-center gap-12 justify-center min-h-[320px] shadow-md transition-all duration-300">
+          <img
+            src={reviews[currentIndex].image}
+            alt={reviews[currentIndex].name}
+            className="w-32 h-32 rounded-full object-cover"
+          />
+          <div className="text-left max-w-2xl">
+            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+              {reviews[currentIndex].text}
+            </p>
+            <p className="font-bold text-base tracking-wider">{reviews[currentIndex].name}</p>
+          </div>
+        </div>
+
+        {/* Navigation Buttons */}
+        <button
+          onClick={handlePrev}
+          className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 border border-black rounded-full flex items-center justify-center hover:bg-black hover:text-white transition z-10"
+        >
+          &#8592;
+        </button>
+        <button
+          onClick={handleNext}
+          className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 border border-black rounded-full flex items-center justify-center hover:bg-black hover:text-white transition z-10"
+        >
+          &#8594;
+        </button>
       </div>
-    </div>
+
+      {/* Indicator Dots */}
+      <div className="flex justify-center gap-3 mt-10">
+        {reviews.map((_, index) => (
+          <button
+            key={index}
+            className={`w-3.5 h-3.5 rounded-full transition ${
+              index === currentIndex ? "bg-black" : "bg-gray-300"
+            }`}
+            onClick={() => setCurrentIndex(index)}
+          />
+        ))}
+      </div>
+
+      {/* Brand Logos */}
+      <div className="flex flex-wrap justify-center items-center gap-14 mt-24">
+        <img src="/img/Moderno/HomePage/ricky-2136507208-e1682433504388.webp" alt="PRADA" className="h-8" />
+        <img src="/img/Moderno/HomePage/moderno-2531698434.webp" alt="BURBERRY" className="h-8" />
+        <img src="/img/Moderno/HomePage/moderno-2531767109.webp" alt="DOLCE & GABBANA" className="h-8" />
+        <img src="/img/Moderno/HomePage/moderno-2531627479.webp" alt="HUGO BOSS" className="h-8" />
+        <img src="/img/Moderno/HomePage/moderno-2531959934.webp" alt="LAFAYETTE 148" className="h-8" />
+      </div>
+    </section>
   );
 };
 
