@@ -53,32 +53,24 @@ const HeroSlider = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="flex flex-col md:grid md:grid-cols-5 h-full">
-              {/* Image (takes full width on mobile, 3/5 columns on md and up) */}
-              <div className="w-full h-1/2 md:h-full md:col-span-3 flex justify-center items-center md:order-2">
+              {/* Image section */}
+              <div className="flex-1 md:col-span-3 md:order-2">
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[116%] object-cover"
                 />
               </div>
 
-              {/* Content (takes full width on mobile, 2/5 columns on md and up) */}
-              <div className="w-full h-1/2 md:h-full md:col-span-2 flex flex-col justify-center p-5 sm:p-10 md:p-10 lg:p-20 md:order-1">
-                <h1 className="
-                  text-3xl sm:text-4xl md:text-5xl lg:text-7xl
-                  mb-3 sm:mb-4 md:mb-6
-                  leading-tight
-                  whitespace-normal break-words
-                  max-w-xl
-                  font-medium
-                ">
+              {/* Content section */}
+              <div className="flex-1 md:col-span-2 flex flex-col justify-center md:order-1 px-4 sm:px-6 md:px-8 lg:px-12  gap-2">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight max-w-xl mb-1">
                   {slide.title}
                 </h1>
-                <p className="text-gray-700 mb-4 sm:mb-6 md:mb-8 text-sm sm:text-base md:text-lg break-words">
+                <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-2">
                   {slide.description}
                 </p>
-
-                <button className="self-start bg-black text-white px-6 py-3 sm:px-8 sm:py-4 uppercase tracking-wider hover:bg-red-500 transition duration-300">
+                <button className="self-start bg-black text-white px-6 py-3 sm:px-8 sm:py-4 uppercase tracking-wide hover:bg-red-500 transition duration-300">
                   {slide.buttonText}
                 </button>
               </div>
@@ -88,8 +80,7 @@ const HeroSlider = () => {
       </Swiper>
 
       {/* Custom Slide Dots */}
-      {/* KEY CHANGE: Adjusted bottom and left for mobile to place them closer to the button */}
-      <div className="absolute bottom-[-0.5rem] left-5 sm:left-10 md:bottom-10 md:left-20 flex gap-2 sm:gap-4 z-10">
+      <div className="absolute bottom-[1rem] left-5 sm:left-10 md:bottom-6 md:left-10 flex gap-2 sm:gap-4 z-10">
         {slides.map((_, index) => (
           <div
             key={index}

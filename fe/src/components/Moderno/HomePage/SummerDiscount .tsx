@@ -37,7 +37,7 @@ const summerDiscountData = [
 ];
 
 const SummerCard = ({ item, currentIndex }) => (
-  <div className="relative w-full h-[550px] overflow-hidden group">
+  <div className="relative w-full h-[500px] overflow-hidden group">
     {/* Background Image */}
     {item.images.map((image, index) => (
       <img
@@ -76,7 +76,7 @@ const SummerDiscount = () => {
 
   return (
     <section className="w-full bg-white font-manrope py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {summerDiscountData.map((item) => (
           <SummerCard key={item.id} item={item} currentIndex={currentIndex} />
         ))}
