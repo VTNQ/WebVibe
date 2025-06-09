@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionStatement = () => {
   return (
-    <div className="relative p-[12vh] sm:p-[8vh] md:p-[10vh] mt-[10vh] sm:mt-[6vh] md:mt-[8vh]">
+    <div className="relative p-[6vh] sm:p-[4vh] md:p-[6vh] mt-[4vh] sm:mt-[3vh] md:mt-[4vh]">
       {/* Background image with overlay */}
       <div
         className="absolute inset-0 bg-no-repeat bg-center"
@@ -13,7 +13,7 @@ const MissionStatement = () => {
           zIndex: -2,
         }}
       />
-
+      
       <div className="absolute inset-0 bg-white bg-opacity-70 z-[-1]" />
 
       <div className="mx-auto text-center px-4 sm:px-6 md:px-8">

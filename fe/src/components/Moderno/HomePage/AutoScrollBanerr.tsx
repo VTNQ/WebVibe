@@ -16,7 +16,7 @@ const AutoScrollBanner = () => {
     ));
 
   return (
-    <div className="overflow-hidden border-t border-b border-black w-full font-manrope">
+    <div className="overflow-hidden border-t border-b border-black w-full font-manrope mt-[-1vh]">
       <div className="flex w-max animate-marquee p-5">
         {renderItems()}
         {renderItems()}
