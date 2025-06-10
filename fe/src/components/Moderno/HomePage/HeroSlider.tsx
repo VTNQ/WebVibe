@@ -63,7 +63,7 @@ const HeroSlider = () => {
               </div>
 
               {/* Content section */}
-              <div className="flex-1 md:col-span-2 flex flex-col justify-center md:order-1 px-4 sm:px-6 md:px-8 lg:px-12  gap-2">
+              <div className="flex-1 md:col-span-2 flex flex-col justify-center md:order-1 px-4 sm:px-6 md:px-8 lg:px-12 py-12  gap-2">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight max-w-xl mb-1">
                   {slide.title}
                 </h1>

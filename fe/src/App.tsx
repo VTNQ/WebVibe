@@ -17,7 +17,7 @@ function App() {
       <Route path="/product" element={<ProductPage />} />
 
       {/* Nested route dưới /fashion */}
-      <Route path="/fashion" element={<FashionPage />}>
+      <Route path="/Morderno" element={<FashionPage />}>
         <Route path="product" element={<ProductPageModerno />} />
         <Route path="product/:id" element={<ProductDetail />} />
       </Route>
