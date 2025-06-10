@@ -45,6 +45,7 @@ const ProductPage=()=>{
                 { label: "BEST SELLER", type: "highlight" },
                 { label: "-4%", type: "discount" },
             ],
+            category: "WOMEN",
         },
 
         // Thêm bao nhiêu sản phẩm tùy ý...
@@ -58,6 +59,8 @@ const ProductPage=()=>{
             img: "/img/Moderno/ProductsPage/Products/product2.jpg",
             imgHover: "/img/Moderno/ProductsPage/Products/product2-2.png",
             tags: [{ label: "-13%", type: "discount" }],
+            category: "WOMEN",
+
         },
         {
             id: 3,
@@ -72,6 +75,8 @@ const ProductPage=()=>{
                 { label: "BEST SELLER", type: "highlight" },
                 { label: "-4%", type: "discount" },
             ],
+            category: "WOMEN",
+
         },
         {
             id: 4,
@@ -86,6 +91,8 @@ const ProductPage=()=>{
                 { label: "BEST SELLER", type: "highlight" },
                 { label: "-4%", type: "discount" },
             ],
+            category: "WOMEN",
+
         },
         {
             id: 5,
@@ -100,6 +107,8 @@ const ProductPage=()=>{
 
                 { label: "-10%", type: "discount" },
             ],
+            category: "WOMEN",
+
         },
         {
             id: 6,
@@ -114,6 +123,8 @@ const ProductPage=()=>{
 
                 { label: "-10%", type: "discount" },
             ],
+            category: "WOMEN",
+
         },
         {
             id: 7,
@@ -128,6 +139,8 @@ const ProductPage=()=>{
 
                 { label: "-10%", type: "discount" },
             ],
+            category: "WOMEN",
+
         },
         {
             id: 8,
@@ -142,6 +155,8 @@ const ProductPage=()=>{
 
                 { label: "-10%", type: "discount" },
             ],
+            category: "WOMEN",
+
         },
 
         {
@@ -157,6 +172,8 @@ const ProductPage=()=>{
                 { label: "BEST SELLER", type: "highlight" },
                 { label: "-4%", type: "discount" },
             ],
+            category: "WOMEN",
+
         },
 
         // Thêm bao nhiêu sản phẩm tùy ý...
@@ -174,6 +191,8 @@ const ProductPage=()=>{
                 { label: "BEST SELLER", type: "highlight" },
                 { label: "-4%", type: "discount" },
             ],
+            category: "WOMEN",
+
         },
         {
             id: 11,
@@ -185,6 +204,8 @@ const ProductPage=()=>{
             img: "/img/Moderno/ProductsPage/Products/product2.jpg",
             imgHover: "/img/Moderno/ProductsPage/Products/product2-2.png",
             tags: [{ label: "-13%", type: "discount" }],
+            category: "WOMEN",
+
         },
         {
             id: 12,
@@ -199,21 +220,146 @@ const ProductPage=()=>{
                 { label: "BEST SELLER", type: "highlight" },
                 { label: "-4%", type: "discount" },
             ],
+            category: "WOMEN",
+
+        },
+        {
+            id: 13,
+            brand: "ZEGNA",
+            name: "Pin Dot Trofeo Milano Wool Suit",
+            description:
+                "A shapely halter dress designed with slinky crossback straps and a leg-baring slit is an elegant option for your upcoming event",
+            price: "$6,400.00",
+            img: "/img/Moderno/ProductsPage/Products/productMen1.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/productMen1-1.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-5%", type: "discount" },
+            ],
+            category: "MEN",
+        },
+        {
+            id: 14,
+            brand: "ZEGNA",
+            name: "Pin Dot Trofeo Milano Wool Suit",
+            description:
+                "A shapely halter dress designed with slinky crossback straps and a leg-baring slit is an elegant option for your upcoming event",
+            price: "$6,400.00",
+            img: "/img/Moderno/ProductsPage/Products/productMen1.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/productMen1-1.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-5%", type: "discount" },
+            ],
+            category: "MEN",
+        },
+        {
+            id: 15,
+            brand: "ZEGNA",
+            name: "Pin Dot Trofeo Milano Wool Suit",
+            description:
+                "A shapely halter dress designed with slinky crossback straps and a leg-baring slit is an elegant option for your upcoming event",
+            price: "$6,400.00",
+            img: "/img/Moderno/ProductsPage/Products/productMen1.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/productMen1-1.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-5%", type: "discount" },
+            ],
+            category: "MEN",
+        },
+        {
+            id: 16,
+            brand: "MAC DUGGAL",
+            name: "Kids’ Embroidered Tiered Tulle Dress",
+            description:
+                "Floral embroidery details the bodice of this keepsake-worthy dress with a ruffled neck and tiered tulle skirt trimmed in scalloped lace.",
+            price: "$500.00",
+            img: "/img/Moderno/ProductsPage/Products/productKid1.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/productKid1-1.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-5%", type: "discount" },
+            ],
+            category: "KIDS",
+        },
+        {
+            id: 17,
+            brand: "MAC DUGGAL",
+            name: "Kids’ Embroidered Tiered Tulle Dress",
+            description:
+                "Floral embroidery details the bodice of this keepsake-worthy dress with a ruffled neck and tiered tulle skirt trimmed in scalloped lace.",
+            price: "$500.00",
+            img: "/img/Moderno/ProductsPage/Products/productKid1.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/productKid1-1.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-5%", type: "discount" },
+            ],
+            category: "KIDS",
+        },
+        {
+            id: 18,
+            brand: "MAC DUGGAL",
+            name: "Kids’ Embroidered Tiered Tulle Dress",
+            description:
+                "Floral embroidery details the bodice of this keepsake-worthy dress with a ruffled neck and tiered tulle skirt trimmed in scalloped lace.",
+            price: "$500.00",
+            img: "/img/Moderno/ProductsPage/Products/productKid1.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/productKid1-1.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-5%", type: "discount" },
+            ],
+            category: "KIDS",
+        },
+        {
+            id: 19,
+            brand: "MAC DUGGAL",
+            name: "Kids’ Embroidered Tiered Tulle Dress",
+            description:
+                "Floral embroidery details the bodice of this keepsake-worthy dress with a ruffled neck and tiered tulle skirt trimmed in scalloped lace.",
+            price: "$500.00",
+            img: "/img/Moderno/ProductsPage/Products/productKid1.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/productKid1-1.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-5%", type: "discount" },
+            ],
+            category: "KIDS",
+        },
+        {
+            id: 20,
+            brand: "",
+            name: "VLOGO Wool Felt Fedora",
+            description:
+                "A tonal calfskin-leather band embellished with golden VLOGO hardware wraps the crown of this classic fedora crafted from felted wool.",
+            price: "$300.00",
+            img: "/img/Moderno/ProductsPage/Products/productAcces1.jpg",
+            imgHover: "/img/Moderno/ProductsPage/Products/productAcces1-1.png",
+            tags: [
+                { label: "BEST SELLER", type: "highlight" },
+                { label: "-5%", type: "discount" },
+            ],
+            category: "ACCESSORIES",
         },
     ];
 
+    // const handleClick = (categoryName) => {
+    //     console.log("clicke",categoryName);
+    //     if (categoryName === 'WOMEN') {
+    //         setActiveCategory(categoryName);
+    //     } else {
+    //         Swal.fire({
+    //             icon: 'info',
+    //             title: 'Notice',
+    //             text: 'This function does not work at current time',
+    //             confirmButtonText: 'Đã hiểu',
+    //         });
+    //     }
+    // };
     const handleClick = (categoryName) => {
-        console.log("clicke",categoryName);
-        if (categoryName === 'WOMEN') {
-            setActiveCategory(categoryName);
-        } else {
-            Swal.fire({
-                icon: 'info',
-                title: 'Notice',
-                text: 'This function does not work at current time',
-                confirmButtonText: 'Đã hiểu',
-            });
-        }
+        setActiveCategory(categoryName);
     };
 
     const [activeCategory, setActiveCategory] = useState("WOMEN");
@@ -247,7 +393,9 @@ const ProductPage=()=>{
                         <div
                             key={category.id}
                             className="flex flex-col justify-between items-center cursor-pointer"
+                            // onClick={() => handleClick(category.nameCategories)}
                             onClick={() => handleClick(category.nameCategories)}
+
                         >
                             <div
                                 className={`border transition-all duration-300 ${
@@ -276,9 +424,14 @@ const ProductPage=()=>{
 
             <section className="mt-5  font-basier">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4    ">
-                    {products.map((product) => (
-                        <ProductCard key={product.id} product={product} />
-                    ))}
+                    {/*{products.map((product) => (*/}
+                    {/*    <ProductCard key={product.id} product={product} />*/}
+                    {/*))}*/}
+                    {products
+                        .filter((product) => product.category === activeCategory)
+                        .map((product) => (
+                            <ProductCard key={product.id} product={product} />
+                        ))}
 
                 </div>
 
