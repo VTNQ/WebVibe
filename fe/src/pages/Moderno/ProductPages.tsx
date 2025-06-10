@@ -458,7 +458,7 @@ function ProductCard({ product }) {
     const navigate = useNavigate();
     return (
         <div
-              onClick={() => navigate(`/fashion/product/${product.id}`, { state: { product } })}
+              onClick={() => navigate(`/Morderno/product/${product.id}`, { state: { product } })}
               className="relative cursor-pointer card flex flex-col bg-white border border-gray-200 group hover:border-black "
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
