@@ -52,6 +52,7 @@ const NavBar = () => {
         </div>
       </div>
 
+
       {/* Desktop Navigation */}
       <nav className="hidden sm:flex justify-center items-center space-x-6 sm:space-x-8 py-3 font-semibold text-sm sm:text-[0.7rem] text-base lg:text-[0.78rem] uppercase tracking-wide">
         <a href="#" className="hover:text-red-500">HOMES</a>
