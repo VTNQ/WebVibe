@@ -122,7 +122,7 @@ const BigSaleComponent = () => {
       >
         {filteredProducts.map((product, index) => (
           <SwiperSlide key={index}>
-            <div className="relative group rounded shadow text-left flex flex-col justify-between h-full min-h-[900px] border border-transparent hover:border-black transition duration-300">
+            <div className="relative group rounded shadow text-left flex flex-col justify-between h-full min-h-[900px] border border-gray-200 hover:border-black transition duration-300">
               {/* left */}
               <div className="bg-white hover:bg-[#F4F4F4] w-full flex-grow">
                 {/* Wishlist */}
