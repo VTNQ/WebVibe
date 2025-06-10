@@ -57,7 +57,7 @@ const products = [
     price: "$850.00",
     oldPrice: "$900.00",
     sale: "-6%",
-    tag: "FEATURED",
+   
     description: "Drawstring cinches the wide hemline of this pullover...",
   },
   {
@@ -78,7 +78,7 @@ const products = [
   },
 ];
 
-const tabs = ["WOMEN", "MEN", "KIDS", "ACCESSORIES", "SPORTS", "SALE", "BEST SELLERS"]; // Thêm nhiều tab hơn để dễ hình dung
+const tabs = ["WOMEN", "MEN", "KIDS", "ACCESSORIES"];
 
 const BigSaleComponent = () => {
   const [selectedTab, setSelectedTab] = useState("WOMEN");
@@ -88,7 +88,7 @@ const BigSaleComponent = () => {
     <div className="w-full px-4 py-8 sm:px-6 md:px-10 lg:px-16 xl:px-20"> {/* Responsive padding cho toàn bộ container */}
       {/* Tabs Section */}
       <div className="flex justify-center mb-8"> {/* Tăng mb cho khoảng cách dưới */}
-        {/* Container cho các nút tab - thêm overflow-x-auto để cuộn ngang và whitespace-nowrap */}
+        {/* Container cho các nút tab - Thay đổi space-x để làm các nút sát vào nhau */}
         <div className="flex space-x-2 sm:space-x-4 overflow-x-auto whitespace-nowrap pb-2"> {/* pb-2 để tạo khoảng trống cho scrollbar nếu có */}
           {tabs.map((tab) => (
             <button
@@ -121,11 +121,13 @@ const BigSaleComponent = () => {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      {/* Thay đổi gap thành gap-0 để các item sản phẩm dính sát vào nhau */}
+      <div className="grid grid-cols-2 gap-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {filteredProducts.map((product, index) => (
           <div
             key={index}
-            className="relative group rounded shadow-sm text-left flex flex-col justify-between h-full border border-transparent hover:border-black transition duration-300"
+            // Loại bỏ shadow để trông "sát" hơn hoặc giữ lại nếu muốn có đường viền nhỏ
+            className="relative group text-left flex flex-col justify-between h-full border border-gray-200 hover:border-black transition duration-300"
           >
             {/* Image & Hover Actions */}
             <div className="bg-white hover:bg-[#F4F4F4] w-full flex-grow">
@@ -138,11 +140,11 @@ const BigSaleComponent = () => {
 
               {/* Tag & Sale */}
               <div className="absolute top-2 right-2 flex items-end space-x-1 z-10">
-                {product.tag && (
+                {/* {product.tag && (
                   <span className="bg-transparent text-black border border-black text-xs px-2 py-1 rounded-sm">
                     {product.tag}
                   </span>
-                )}
+                )} */}
                 {product.sale && (
                   <span className="border border-red-400 text-red-500 text-xs px-2 py-1 rounded-sm">
                     {product.sale}
@@ -151,8 +153,6 @@ const BigSaleComponent = () => {
               </div>
 
               {/* Product Image Container */}
-              {/* Chiều cao hình ảnh responsive: sử dụng aspect-w-x/aspect-h-y hoặc padding-top hack để duy trì tỷ lệ khung hình */}
-              {/* Hoặc đơn giản là dùng chiều cao cố định theo breakpoint để dễ kiểm soát hơn trong trường hợp này */}
               <div className="relative overflow-hidden h-48 sm:h-64 md:h-72 lg:h-80 xl:h-96"> {/* Chiều cao ảnh responsive */}
                 {Array.isArray(product.image) ? (
                   <>
@@ -178,11 +178,12 @@ const BigSaleComponent = () => {
                 )}
 
                 {/* Hover Buttons */}
-                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col gap-2 sm:flex-row text-xs">
-                  <button className="w-full flex items-center justify-center gap-1 px-3 py-2 font-semibold uppercase tracking-wide bg-white hover:bg-black hover:text-white transition">
+                {/* Điều chỉnh kích thước và khoảng cách nút hover */}
+                <div className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col gap-1 sm:flex-row text-xs">
+                  <button className="w-full flex items-center justify-center gap-0.5 px-2 py-1 font-semibold uppercase tracking-tight bg-white hover:bg-black hover:text-white transition text-[0.65rem] sm:text-xs">
                     <MdRemoveRedEye className="text-base" /> Quick View
                   </button>
-                  <button className="w-full flex items-center justify-center gap-1 px-3 py-2 font-semibold uppercase tracking-wide bg-white hover:bg-black hover:text-white transition">
+                  <button className="w-full flex items-center justify-center gap-0.5 px-2 py-1 font-semibold uppercase tracking-tight bg-white hover:bg-black hover:text-white transition text-[0.65rem] sm:text-xs">
                     <MdAddShoppingCart className="text-base" /> Add to Cart
                   </button>
                 </div>
@@ -190,16 +191,15 @@ const BigSaleComponent = () => {
             </div>
 
             {/* Product Info */}
-            <div className="p-3 sm:p-4 flex flex-col justify-between flex-grow"> {/* Padding responsive cho info */}
+            <div className="p-2 sm:p-3 flex flex-col justify-between flex-grow"> {/* Giảm padding cho info */}
               <div>
-                <div className="text-xs sm:text-sm font-semibold text-gray-500">{product.brand}</div> {/* Font size responsive */}
-                <div className="text-sm sm:text-base md:text-lg font-semibold mt-1">{product.name}</div> {/* Font size responsive */}
-                {/* Ẩn description trên màn hình nhỏ để tiết kiệm không gian */}
-                <div className="hidden sm:block mt-2 text-xs sm:text-sm text-gray-600 line-clamp-2">{product.description}</div> 
-                <div className="mt-2 sm:mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                  <div className="text-base sm:text-lg font-bold text-gray-900">{product.price}</div> {/* Font size responsive */}
+                <div className="text-xs font-semibold text-gray-500">{product.brand}</div>
+                <div className="text-sm font-semibold mt-0.5">{product.name}</div>
+                <div className="hidden sm:block mt-1 text-xs text-gray-600 line-clamp-2">{product.description}</div> 
+                <div className="mt-1.5 sm:mt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                  <div className="text-base font-bold text-gray-900">{product.price}</div>
                   {product.oldPrice && (
-                    <div className="text-xs text-gray-400 line-through mt-1 sm:mt-0 sm:ml-2">{product.oldPrice}</div>
+                    <div className="text-xs text-gray-400 line-through mt-0.5 sm:mt-0 sm:ml-1">{product.oldPrice}</div>
                   )}
                 </div>
               </div>

@@ -11,7 +11,7 @@ const FooterFashion = () => {
         className="fixed top-1/2 right-0 transform -translate-y-1/2 bg-green-600 text-white font-bold py-3 px-6 -rotate-90 origin-bottom-right z-50 hover:bg-green-700 transition-colors hidden sm:block"
         style={{ letterSpacing: '0.1em' }}
       >
-        Buy Theme
+       WebVibe
       </a>
 
       <footer className="bg-black text-gray-400 pt-20 pb-12 px-4 sm:px-6 lg:px-8">
