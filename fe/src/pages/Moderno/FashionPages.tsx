@@ -13,7 +13,7 @@ const FashionPage = () => {
   const location = useLocation();
 
   // Kiểm tra nếu path là chính xác "/fashion"
-  const isFashionRoot = location.pathname === "/fashion";
+  const isFashionRoot = location.pathname === "/Morderno";
 
   return (
     <>
