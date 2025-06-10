@@ -23,8 +23,8 @@ const products = [
     brand: "VALENTINO",
     name: "V Logo Pocket Wool & Silk Dress",
     image: [
-      "/img/Moderno/HomePage/moderno-2555765914-960x1488.jpg",
-      "/img/Moderno/HomePage/product1-1.png",
+      "https://is4.fwrdassets.com/images/p/ip2/pl2/CLOE-WD161_V1.jpg",
+      "https://is4.fwrdassets.com/images/p/fw/z/CLOE-WD161_V3.jpg",
     ],
     price: "$6,500.00",
     oldPrice: "$7,500.00",
@@ -37,8 +37,8 @@ const products = [
     brand: "BOTTEGA VENETA",
     name: "Textured Knit A-Line Gown",
     image: [
-      "/img/Moderno/HomePage/moderno-2555765914-960x1488.jpg",
-      "/img/Moderno/HomePage/product1-1.png",
+      "https://is4.fwrdassets.com/images/p/fw/z/TFOF-WD141_V1.jpg",
+      "https://is4.fwrdassets.com/images/p/fw/z/TFOF-WD141_V5.jpg",
     ],
     price: "$6,500.00",
     oldPrice: "$7,000.00",
@@ -51,8 +51,8 @@ const products = [
     brand: "WOMEN",
     name: "Pullover Sweatshirt",
     image: [
-      "/img/Moderno/HomePage/moderno-2555765914-960x1488.jpg",
-      "/img/Moderno/HomePage/product1-1.png",
+      "https://is4.fwrdassets.com/images/p/fw/z/OSCF-WD110_V1.jpg",
+      "https://is4.fwrdassets.com/images/p/fw/z/OSCF-WD110_V4.jpg",
     ],
     price: "$850.00",
     oldPrice: "$900.00",
@@ -66,8 +66,8 @@ const products = [
     brand: "FRAME",
     name: "Le Cutoff Denim Shorts",
     image: [
-      "/img/Moderno/HomePage/moderno-2555765914-960x1488.jpg",
-      "/img/Moderno/HomePage/product1-1.png",
+      "https://is4.fwrdassets.com/images/p/fw/z/TFOF-WD128_V1.jpg",
+      "https://is4.fwrdassets.com/images/p/fw/z/TFOF-WD128_V3.jpg",
     ],
     price: "$100.00",
     oldPrice: "$150.00",
