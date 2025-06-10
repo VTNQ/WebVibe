@@ -92,11 +92,10 @@ const BigSaleComponent = () => {
           <button
             key={tab}
             onClick={() => setSelectedTab(tab)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition ${
-              selectedTab === tab
+            className={`px-4 py-2 rounded-full text-sm font-medium transition ${selectedTab === tab
                 ? "bg-black text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-            }`}
+              }`}
           >
             {tab}
           </button>
@@ -157,14 +156,15 @@ const BigSaleComponent = () => {
               )}
 
               {/* Hover Buttons */}
-              <div className="flex gap-2 absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
-                <button className="flex-1 flex items-center justify-center gap-1 px-2 py-2 sm:px-3 sm:py-3 text-[10px] sm:text-[12px] font-semibold uppercase tracking-wider bg-white hover:bg-black hover:text-white">
-                  <MdRemoveRedEye /> Quick View
+              <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col sm:flex-row gap-2">
+                <button className="flex-1 flex items-center justify-center gap-1 px-3 py-2 text-xs font-semibold uppercase tracking-wide bg-white hover:bg-black hover:text-white transition">
+                  <MdRemoveRedEye className="text-base" /> Quick View
                 </button>
-                <button className="flex-1 flex items-center justify-center gap-1 px-2 py-2 sm:px-3 sm:py-3 text-[10px] sm:text-[12px] font-semibold uppercase tracking-wider bg-white hover:bg-black hover:text-white">
-                  <MdAddShoppingCart /> Add to Cart
+                <button className="flex-1 flex items-center justify-center gap-1 px-3 py-2 text-xs font-semibold uppercase tracking-wide bg-white hover:bg-black hover:text-white transition">
+                  <MdAddShoppingCart className="text-base" /> Add to Cart
                 </button>
               </div>
+
             </div>
 
             {/* Info */}
