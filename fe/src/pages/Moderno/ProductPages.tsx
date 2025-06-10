@@ -200,7 +200,6 @@ const ProductPage=()=>{
                 { label: "-4%", type: "discount" },
             ],
         },
-
     ];
 
     const handleClick = (categoryName) => {
@@ -210,8 +209,8 @@ const ProductPage=()=>{
         } else {
             Swal.fire({
                 icon: 'info',
-                title: 'Thông báo',
-                text: 'Chức năng này chưa khả dụng!',
+                title: 'Notice',
+                text: 'This function does not work at current time',
                 confirmButtonText: 'Đã hiểu',
             });
         }

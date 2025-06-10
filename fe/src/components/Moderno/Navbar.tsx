@@ -14,8 +14,8 @@ const NavBar = () => {
   return (
     <header className="border-b border-gray-300 font-manrope">
       {/* Top Line */}
-      <div className="bg-white border-b text-sm font-semibold tracking-wide">
-        <div className="w-full max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3 relative">
+      <div className="bg-white border-b border-black text-sm font-semibold tracking-wide">
+        <div className="w-full max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-[1.4rem] relative">
           {/* Left: Mobile Menu Icon */}
           <div className="flex items-center sm:hidden">
             {menuOpen ? (
@@ -30,13 +30,13 @@ const NavBar = () => {
               />
             )}
           </div>
-          <div className="hidden sm:block text-xs sm:text-sm whitespace-nowrap">
+          <div className="hidden sm:block text-xs sm:text-[0.75rem] md:text-[1rem] whitespace-nowrap">
   BEST SPECIAL OFFERS! <span className="text-red-500">40% OFF!</span>
 </div>
 
           {/* Center: Logo */}
           <div className="absolute left-1/2 transform -translate-x-1/2 text-lg sm:text-3xl font-bold tracking-widest whitespace-nowrap">
-            MODERNO
+              <img className="h-[1.2rem] " src="/img/Moderno/logo.png"></img>
           </div>
 
           {/* Right: Icons */}
@@ -45,15 +45,17 @@ const NavBar = () => {
             <div className="hidden sm:flex items-center space-x-4 text-lg sm:text-xl">
               <FaUser className="hover:text-red-500 cursor-pointer" />
               <FaSearch className="hover:text-red-500 cursor-pointer" />
-              <FaHeart className="hover:text-red-500 cursor-pointer" />
+              <FaHeart className="hover:text-red-50á  k0 cursor-pointer" />
             </div>
             <FaShoppingBag className="text-xl cursor-pointer hover:text-red-500" />
           </div>
         </div>
       </div>
 
+
+
       {/* Desktop Navigation */}
-      <nav className="hidden sm:flex justify-center items-center space-x-6 sm:space-x-8 py-3 font-semibold text-sm sm:text-base uppercase tracking-wide">
+      <nav className="hidden sm:flex justify-center items-center space-x-6 sm:space-x-8 py-3 font-semibold text-sm sm:text-[0.7rem] text-base lg:text-[0.78rem] uppercase tracking-wide">
         <a href="#" className="hover:text-red-500">HOMES</a>
         <a href="#" className="hover:text-red-500">SHOP</a>
         <a href="#" className="hover:text-red-500">BLOG</a>
@@ -64,7 +66,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="sm:hidden flex flex-col items-center space-y-4 py-4 font-semibold text-base uppercase tracking-wide bg-white border-t">
+        <div className="sm:hidden flex flex-col items-center space-y-4 py-4 font-semibold text-base uppercase tracking-wide bg-white border-t ">
           <a href="#" className="hover:text-red-500" onClick={() => setMenuOpen(false)}>HOMES</a>
           <a href="#" className="hover:text-red-500" onClick={() => setMenuOpen(false)}>SHOP</a>
           <a href="#" className="hover:text-red-500" onClick={() => setMenuOpen(false)}>BLOG</a>
