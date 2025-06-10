@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionStatement = () => {
   return (
-    <div className="relative p-[6vh] sm:p-[4vh] md:p-[6vh] mt-[4vh] sm:mt-[3vh] md:mt-[4vh]">
+    <div className="relative px-[1rem]  sm:p-[4vh] md:p-[6vh] mt-[4vh] sm:mt-[3vh] md:mt-[4vh]">
       {/* Background image with overlay */}
       <div
         className="absolute inset-0 bg-no-repeat bg-center"
@@ -16,7 +16,7 @@ const MissionStatement = () => {
       
       <div className="absolute inset-0 bg-white bg-opacity-70 z-[-1]" />
 
-      <div className="mx-auto text-center px-4 sm:px-6 md:px-8">
+      <div className="mx-auto px-0 text-center  sm:px-6 md:px-8">
         {/* Icon */}
         <div className="mb-8">
           <svg
@@ -36,7 +36,7 @@ const MissionStatement = () => {
 
         {/* Statement */}
         <p
-          className="text-[28px] sm:text-[36px] md:text-[44px] leading-[50px] sm:leading-[56px] md:leading-[79px] font-medium text-gray-900"
+          className="text-[20px] sm:text-[36px] md:text-[44px] leading-[50px] sm:leading-[56px] md:leading-[79px] font-medium text-gray-900"
           style={{
             letterSpacing: "-0.03em",
             wordSpacing: "2px",

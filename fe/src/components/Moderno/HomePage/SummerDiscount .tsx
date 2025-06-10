@@ -37,7 +37,7 @@ const summerDiscountData = [
 ];
 
 const SummerCard = ({ item, currentIndex }) => (
-  <div className="relative w-full h-[500px] overflow-hidden group">
+  <div className="relative w-full h-[380px] overflow-hidden group">
     {/* Background Image */}
     {item.images.map((image, index) => (
       <img
