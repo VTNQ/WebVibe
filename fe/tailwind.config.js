@@ -10,9 +10,14 @@ module.exports = {
 				  '0%': { transform: 'translateX(0%)' },
 				  '100%': { transform: 'translateX(-50%)' },
 				},
+				spin: {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' },
+				  },
 			  },
 			  animation: {
 				marquee: 'marquee 20s linear infinite',
+				slowspin: 'spin 2s linear infinite',
 			  },
 			lineHeight:{
 				tighter:'1.2'
