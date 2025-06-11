@@ -12,7 +12,7 @@ const blogs = [
         category: 'NEWS',
         images: [
             '/img/Moderno/Blog/moderno-2338813525-600x336.jpg',
-         
+
         ],
         link: '#',
         isVideo: false,
@@ -38,7 +38,7 @@ const blogs = [
         category: 'PROMO',
         images: [
             '/img/Moderno/Blog/moderno-2338177441-600x336.jpg',
-          
+
         ],
         link: '#',
         isVideo: true,
@@ -49,13 +49,13 @@ const blogs = [
         title: 'New Trends in Clothes Industry in 2023',
         description:
             'The fashion industry is always evolving, and 2023 is no exception. As we move further into the new year, here are some of the latest fashion trends.',
-            category: 'NEWS',
+        category: 'NEWS',
         images: [
             '/img/Moderno/Blog/moderno-2607419203-600x336.jpg',
-          
+
         ],
         link: '#',
-        
+
     },
 
 ]
@@ -159,7 +159,7 @@ const BlogComponent = () => {
                         </div>
                     </div>
                 ))}
-                 {currentVideoUrl && (
+                {currentVideoUrl && (
                     <iframe
                         src={currentVideoUrl}
                         style={{ display: 'none' }}
@@ -179,7 +179,7 @@ const BlogComponent = () => {
                                 frameBorder="0"
                                 allow="autoplay; encrypted-media"
                                 allowFullScreen
-                                
+
                             />
                             <button
                                 onClick={closeModal}
@@ -189,6 +189,27 @@ const BlogComponent = () => {
                             </button>
                         </div>
                     </div>
+                )}     {isOpen && (
+                    <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center p-4">
+                        <div className="relative w-full max-w-6xl aspect-video bg-black rounded-lg overflow-hidden">
+                            <iframe
+                                className="w-full h-full"
+                                src={currentVideoUrl}
+                                title="Blog Video"
+                                frameBorder="0"
+                                allow="autoplay; encrypted-media"
+                                allowFullScreen
+                            ></iframe>
+
+                            <button
+                                onClick={closeModal}
+                                className="absolute top-2 right-2 text-white text-2xl bg-black/50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-black transition"
+                            >
+                                ✕
+                            </button>
+                        </div>
+                    </div>
+
                 )}
 
             </div>
