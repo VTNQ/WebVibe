@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Swal from 'sweetalert2';
+
 import {
   FaUser,
   FaSearch,
@@ -10,6 +12,15 @@ import {
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const showFeatureAlert = () => {
+    Swal.fire({
+      icon: 'info',
+      title: 'Muốn xem ư!!!',
+      text: 'Không cho đâu :}}',
+      confirmButtonColor: '#6c63ff',
+      confirmButtonText: 'OK',
+    });
+  };
 
   return (
     <header className="border-b border-gray-300 font-manrope">
@@ -58,11 +69,12 @@ const NavBar = () => {
       <nav className="hidden sm:flex justify-center items-center space-x-6 sm:space-x-8 py-3 font-semibold text-sm sm:text-[0.7rem] text-base lg:text-[0.78rem] uppercase tracking-wide">
         <a href="/Morderno" className="hover:text-red-500">HOMES</a>
         <a href="/Morderno/product" className="hover:text-red-500">SHOP</a>
-        <a href="#" className="hover:text-red-500">BLOG</a>
-        <a href="#" className="hover:text-red-500">PAGES</a>
-        <a href="#" className="hover:text-red-500">MEGA</a>
+        <a href="#" onClick={(e) => { e.preventDefault(); showFeatureAlert(); }} className="hover:text-red-500">BLOG</a>
+        <a href="#" onClick={(e) => { e.preventDefault(); showFeatureAlert(); }} className="hover:text-red-500">PAGES</a>
+        <a href="#" onClick={(e) => { e.preventDefault(); showFeatureAlert(); }} className="hover:text-red-500">MEGA</a>
         <a href="/contact" className="hover:text-red-500">CONTACTS</a>
       </nav>
+
 
       {/* Mobile Menu */}
       {menuOpen && (
