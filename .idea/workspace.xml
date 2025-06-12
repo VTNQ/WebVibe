@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe55a87f-7c49-4671-8c88-96d172f9337f" name="Changes" comment="Update router, image and productdetail nghia">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/components/Moderno/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fe/src/components/Moderno/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/pages/Moderno/ProductDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fe/src/pages/Moderno/ProductDetail.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
