@@ -15,10 +15,10 @@ const NavBar = () => {
   const showFeatureAlert = () => {
     Swal.fire({
       icon: 'info',
-      title: 'Muốn xem ư!!!',
-      text: 'Không cho đâu :}}',
+      title: 'Feature not yet developed',
+      text: 'Come back later',
       confirmButtonColor: '#6c63ff',
-      confirmButtonText: 'OK',
+      confirmButtonText: 'Ok',
     });
   };
 
