@@ -12,6 +12,8 @@ import BlogDetailPage from "./pages/Moderno/BlogDetailPage";
 import HomePageHotel from "./pages/Hoteler/HomePage";
 import HotelerRoom from "./pages/Hoteler/HotelerRoom";
 import RoomDetail from "./pages/Hoteler/HotelerRoomDetail";
+import HotelerContactPage from "./pages/Hoteler/HotelerContactPage";
+import HotelerAboutPage from "./pages/Hoteler/HotelerAboutPage";
 
 function App() {
   return (
@@ -27,11 +29,14 @@ function App() {
         <Route path="blog/:id" element={<BlogDetailPage />} />
         <Route path="blog" element={<BlogPage />} />
         <Route path="product/:id" element={<ProductDetail />} />
+
       </Route>
     
       <Route path="/Hoteler" element={<HomePageHotel/>}>
           <Route path="rooms" element={<HotelerRoom/>}/>
           <Route path="rooms/details" element={<RoomDetail/>}/>
+          <Route path="contact" element={<HotelerContactPage/>}/>
+          <Route path="about" element={<HotelerAboutPage />} />
       </Route>
       {/* Hoteler routes */}
      
