@@ -1,4 +1,5 @@
 import About from "@/components/Hoteler/Home/About";
+import BlogSection from "@/components/Hoteler/Home/BlogSection";
 import ColorVideoPanel from "@/components/Hoteler/Home/ColorVideoPanel";
 import ExpertTeam from "@/components/Hoteler/Home/ExpertTeam";
 import Footer from "@/components/Hoteler/Home/Footer";
@@ -26,6 +27,7 @@ const HomePage = () => {
                     <ColorVideoPanel />
                     <ExpertTeam />
                     <About />
+                    <BlogSection/>
                 </>
             )}
             <Outlet />

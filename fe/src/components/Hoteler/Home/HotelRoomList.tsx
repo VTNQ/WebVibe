@@ -4,7 +4,7 @@ const rooms = [
     {
         name: "Royal Suite",
         price: "$979 / Night",
-        image: "/images/royal-suite.jpg",
+        image: "https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/room-1.jpg",
         size: "600 m²",
         guests: "2 Guests",
         bed: "2 Bed",
@@ -15,7 +15,7 @@ const rooms = [
     {
         name: "Premier Room",
         price: "$789 / Night",
-        image: "/images/premier-room.jpg",
+        image: "https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/room-2.jpg",
         size: "700 m²",
         guests: "2 Guests",
         bed: "2 Bed",
@@ -26,7 +26,7 @@ const rooms = [
     {
         name: "Skyline Suite",
         price: "$939 / Night",
-        image: "/images/skyline-suite.jpg",
+        image: "https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/room-3.jpg",
         size: "900 m²",
         guests: "2 Guests",
         bed: "2 Bed",
