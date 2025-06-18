@@ -6,6 +6,23 @@ module.exports = {
 	theme: {
 		extend: {
 			keyframes: {
+				
+				shine:{
+					'0%':{left:'-100%'},
+					'100%':{left:'100%'}
+				},
+				'video-play-button-animate': {
+					'0%': {
+					  width: '10px',
+					  height: '10px',
+					  opacity: '0.8',
+					},
+					'100%': {
+					  width: '160px',
+					  height: '160px',
+					  opacity: '0',
+					},
+				  },
 				marquee: {
 				  '0%': { transform: 'translateX(0%)' },
 				  '100%': { transform: 'translateX(-50%)' },
@@ -18,6 +35,8 @@ module.exports = {
 			  animation: {
 				marquee: 'marquee 20s linear infinite',
 				slowspin: 'spin 2s linear infinite',
+				'video-play': 'video-play-button-animate 1.2s ease-in-out infinite forwards',
+				shine:'shine 1s forwards'
 			  },
 			lineHeight:{
 				tighter:'1.2'
@@ -91,6 +110,16 @@ module.exports = {
 	},
 	plugins: [
 		require('tailwind-scrollbar'),
-		require("tailwindcss-animate")
+		require("tailwindcss-animate"),
+		function ({ addUtilities }) {
+			addUtilities({
+			  '.rotate-y-180': {
+				transform: 'rotateY(180deg)',
+			  },
+			  '.-rotate-y-180': {
+				transform: 'rotateY(-180deg)',
+			  },
+			});
+		  },
 	],
 }

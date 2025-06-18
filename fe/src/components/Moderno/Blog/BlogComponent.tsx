@@ -151,7 +151,7 @@ const BlogComponent = () => {
                             <p className="text-gray-600 mb-4 font-[400] text-[13px] leading-[21px]" style={{ letterSpacing: '0.0225em' }}>{blog.description}</p>
                             <div className="text-[11px] leading-[15px] font-[500] text-[#070707] mb-2">{blog.category}</div>
                             <a
-                                href={blog.link}
+                                href={`/blog/1`}
                                 className="text-sm font-semibold hover:underline inline-flex items-center gap-1"
                             >
                                 READ MORE <span>&rarr;</span>

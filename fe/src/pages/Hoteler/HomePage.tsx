@@ -1,0 +1,28 @@
+import About from "@/components/Hoteler/Home/About";
+import ColorVideoPanel from "@/components/Hoteler/Home/ColorVideoPanel";
+import ExpertTeam from "@/components/Hoteler/Home/ExpertTeam";
+import Footer from "@/components/Hoteler/Home/Footer";
+import HeroBookingSection from "@/components/Hoteler/Home/HeroBookingSection";
+import HotelNavbar from "@/components/Hoteler/Home/HotelNavbar";
+import HotelRoomList from "@/components/Hoteler/Home/HotelRoomList";
+import MenuSection from "@/components/Hoteler/Home/MenuSection";
+import OutdoorActivitiesSection from "@/components/Hoteler/Home/OutdoorActivitiesSection";
+import SpecialOffers from "@/components/Hoteler/Home/SpecialOffers";
+
+const HomePage=()=>{
+    return(
+        <>
+        <HotelNavbar/>
+        <HeroBookingSection/>
+        <SpecialOffers/>
+        <OutdoorActivitiesSection/>
+        <HotelRoomList/>
+        <MenuSection/>
+        <ColorVideoPanel/>
+        <ExpertTeam/>
+        <About/>
+        <Footer/>
+        </>
+    )
+}
+export default HomePage;

@@ -9,7 +9,7 @@ import ProductPageModerno from "./pages/Moderno/ProductPages";
 import ProductDetail from "./pages/Moderno/ProductDetail";
 import BlogPage from "./pages/Moderno/BlogPages";
 import BlogDetailPage from "./pages/Moderno/BlogDetailPage";
-
+import HomePageHotel from "./pages/Hoteler/HomePage";
 function App() {
   return (
     <Routes>
@@ -25,6 +25,7 @@ function App() {
         <Route path="blog" element={<BlogPage/>}/>
         <Route path="product/:id" element={<ProductDetail />} />
       </Route>
+      <Route path="/Hotel" element={<HomePageHotel/>}/>
     </Routes>
   );
 }
