@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import RoomSuggestion from "../../components/Hoteler/RoomSuggestion";
+import RoomSuggestion from "../../components/Hoteler/Room/RoomSuggestion";
 import {
   FaBed,
   FaWifi,

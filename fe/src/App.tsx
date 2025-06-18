@@ -9,6 +9,7 @@ import ProductPageModerno from "./pages/Moderno/ProductPages";
 import ProductDetail from "./pages/Moderno/ProductDetail";
 import BlogPage from "./pages/Moderno/BlogPages";
 import BlogDetailPage from "./pages/Moderno/BlogDetailPage";
+import HomePageHotel from "./pages/Hoteler/HomePage";
 import HotelerRoom from "./pages/Hoteler/HotelerRoom";
 import RoomDetail from "./pages/Hoteler/HotelerRoomDetail";
 
@@ -27,10 +28,13 @@ function App() {
         <Route path="blog" element={<BlogPage />} />
         <Route path="product/:id" element={<ProductDetail />} />
       </Route>
-
+    
+      <Route path="/Hoteler" element={<HomePageHotel/>}>
+          <Route path="rooms" element={<HotelerRoom/>}/>
+          <Route path="rooms/details" element={<RoomDetail/>}/>
+      </Route>
       {/* Hoteler routes */}
-      <Route path="/hoteler/rooms" element={<HotelerRoom />} />
-      <Route path="/hoteler/rooms/details" element={<RoomDetail />} />
+     
     </Routes>
   );
 }

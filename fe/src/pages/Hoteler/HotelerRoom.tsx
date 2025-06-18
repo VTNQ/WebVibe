@@ -1,4 +1,4 @@
-import RoomCard from "../../components/Hoteler/RoomCard";
+import RoomCard from "../../components/Hoteler/Room/RoomCard";
 
 export default function HotelerRoom() {
   const rooms = [
