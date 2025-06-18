@@ -3,21 +3,21 @@ import React from "react";
 const blogs = [
   {
     id: 1,
-    image: "https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/news-1.jpg",
+    image: "https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/blog1-672x448.jpg",
     date: "January 12, 2025",
     category: "Tips & Tricks",
     title: "We Offering Online Registration at Your Hotel",
   },
   {
     id: 2,
-    image: "https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/news-2.jpg",
+    image: "https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/blog2-672x448.jpg",
     date: "January 12, 2025",
     category: "Spa & Wellness",
     title: "Our Health Club is Now Available for Your Fitness",
   },
   {
     id: 3,
-    image: "https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/news-3.jpg",
+    image: "https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/blog3-672x448.jpg",
     date: "January 12, 2025",
     category: "Popular Places",
     title: "Restoring the Lighting Design in the Hotel",
