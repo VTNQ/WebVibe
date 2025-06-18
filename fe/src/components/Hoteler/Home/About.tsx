@@ -15,20 +15,7 @@ const About = () => {
                 <StatisticCounter number={30} label="Award Winner" />
             </div>
             <ContactForm/>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-6xl mx-auto">
-                {[
-                    { name: 'Michael Dean', role: 'Office Manager', img: '/team1.jpg' },
-                    { name: 'Frank Burton', role: 'Reservation Agent', img: '/team2.jpg' },
-                    { name: 'Mya Mullins', role: 'Night Auditor', img: '/team3.jpg' },
-                    { name: 'Ralph Nguyen', role: 'Guest Relations Officer', img: '/team4.jpg' },
-                ].map((member, idx) => (
-                    <div key={idx} className="text-center border p-4 hover:shadow-lg transition">
-                        <img src={member.img} alt={member.name} className="w-full h-72 object-cover mb-4" />
-                        <h3 className="text-xl font-semibold">{member.name}</h3>
-                        <p className="text-sm text-gray-500">{member.role}</p>
-                    </div>
-                ))}
-            </div>
+           
         </div>
     )
 }

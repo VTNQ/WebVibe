@@ -7,7 +7,7 @@ const HotelNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  const isFashionRoot = location.pathname === "/Hoteler";
+  const isFashionRoot = location.pathname === "/Hoteler" || "/hoteler";
  
   useEffect(() => {
    
