@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import RoomSuggestion from "../../components/Hoteler/RoomSuggestion";
 import {
   FaBed,
   FaWifi,
@@ -192,6 +193,7 @@ export default function RoomDetail() {
               <button className="w-full bg-[#b68c5a] text-white py-3 uppercase font-semibold hover:bg-[#a07746] transition">
                 Book your stay now
               </button>
+              <RoomSuggestion />
             </div>
           </form>
         </div>
