@@ -8,7 +8,8 @@ const summerDiscountData = [
     images: [
       "img/Moderno/HomePage/ricky-2127760710.jpg",
       "img/Moderno/HomePage/ricky-2105975080-600x929.jpg",
-      "img/Moderno/HomePage/ricky-2125700451-600x929.jpg"
+      "img/Moderno/HomePage/ricky-2127760710.jpg",
+
     ],
     buttonText: "SHOP NOW",
   },
@@ -17,7 +18,8 @@ const summerDiscountData = [
     label: "DISCOUNT",
     title: "-30% for Spring Collection",
     images: [
-      "img/Moderno/HomePage/ricky-2127760710.jpg",
+      "img/Moderno/HomePage/ricky-2125700451-600x929.jpg",
+
       "img/Moderno/HomePage/ricky-2105975080-600x929.jpg",
       "img/Moderno/HomePage/ricky-2125700451-600x929.jpg"
     ],
@@ -30,7 +32,8 @@ const summerDiscountData = [
     images: [
       "img/Moderno/HomePage/ricky-2127760710.jpg",
       "img/Moderno/HomePage/ricky-2105975080-600x929.jpg",
-      "img/Moderno/HomePage/ricky-2125700451-600x929.jpg"
+      "img/Moderno/HomePage/ricky-2127760710.jpg",
+
     ],
     buttonText: "SHOP NOW",
   },

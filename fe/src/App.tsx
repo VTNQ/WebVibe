@@ -10,6 +10,9 @@ import ProductDetail from "./pages/Moderno/ProductDetail";
 import BlogPage from "./pages/Moderno/BlogPages";
 import BlogDetailPage from "./pages/Moderno/BlogDetailPage";
 import HomePageHotel from "./pages/Hoteler/HomePage";
+import HotelerRoom from "./pages/Hoteler/HotelerRoom";
+import RoomDetail from "./pages/Hoteler/HotelerRoomDetail";
+
 function App() {
   return (
     <Routes>
@@ -18,14 +21,20 @@ function App() {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/product" element={<ProductPage />} />
 
-      {/* Nested route dưới /fashion */}
+      {/* Nested route dưới /Morderno */}
       <Route path="/Morderno" element={<FashionPage />}>
         <Route path="product" element={<ProductPageModerno />} />
-        <Route path="blog/:id" element={<BlogDetailPage/>}/>
-        <Route path="blog" element={<BlogPage/>}/>
+        <Route path="blog/:id" element={<BlogDetailPage />} />
+        <Route path="blog" element={<BlogPage />} />
         <Route path="product/:id" element={<ProductDetail />} />
       </Route>
-      <Route path="/Hotel" element={<HomePageHotel/>}/>
+    
+      <Route path="/Hoteler" element={<HomePageHotel/>}>
+          <Route path="rooms" element={<HotelerRoom/>}/>
+          <Route path="rooms/details" element={<RoomDetail/>}/>
+      </Route>
+      {/* Hoteler routes */}
+     
     </Routes>
   );
 }

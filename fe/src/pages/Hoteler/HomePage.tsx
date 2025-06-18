@@ -8,20 +8,28 @@ import HotelRoomList from "@/components/Hoteler/Home/HotelRoomList";
 import MenuSection from "@/components/Hoteler/Home/MenuSection";
 import OutdoorActivitiesSection from "@/components/Hoteler/Home/OutdoorActivitiesSection";
 import SpecialOffers from "@/components/Hoteler/Home/SpecialOffers";
+import { Outlet, useLocation } from "react-router-dom";
 
-const HomePage=()=>{
-    return(
+const HomePage = () => {
+    const location = useLocation();
+    const isFashionRoot = location.pathname === "/Hoteler";
+    return (
         <>
-        <HotelNavbar/>
-        <HeroBookingSection/>
-        <SpecialOffers/>
-        <OutdoorActivitiesSection/>
-        <HotelRoomList/>
-        <MenuSection/>
-        <ColorVideoPanel/>
-        <ExpertTeam/>
-        <About/>
-        <Footer/>
+            <HotelNavbar />
+            {isFashionRoot && (
+                <>
+                    <HeroBookingSection />
+                    <SpecialOffers />
+                    <OutdoorActivitiesSection />
+                    <HotelRoomList />
+                    <MenuSection />
+                    <ColorVideoPanel />
+                    <ExpertTeam />
+                    <About />
+                </>
+            )}
+            <Outlet />
+            <Footer />
         </>
     )
 }

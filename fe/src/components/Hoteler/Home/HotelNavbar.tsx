@@ -1,18 +1,24 @@
 import { useState, useEffect } from "react";
 import { FaBars, FaFacebookF, FaInstagram, FaLinkedinIn, FaSearch, FaYoutube } from "react-icons/fa";
 import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
+import { useLocation } from "react-router-dom";
 
 const HotelNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
+  const isFashionRoot = location.pathname === "/Hoteler";
+ 
   useEffect(() => {
+   
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 50 || !isFashionRoot);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  }, [isFashionRoot]);
   return (
     <div
       className={`w-full fixed top-0 z-50 transition-all duration-300 ${

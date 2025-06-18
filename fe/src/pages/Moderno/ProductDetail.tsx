@@ -279,8 +279,8 @@ const ProductDetail = () => {
   const showInvalidFeature = () => {
     Swal.fire({
       icon: 'info',
-      title: 'Invalid feature',
-      text: 'Tính năng này chưa được hỗ trợ.',
+      title: 'Feature not yet developed',
+      text: 'Come back later',
       confirmButtonText: 'OK',
     });
   };
