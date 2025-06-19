@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe55a87f-7c49-4671-8c88-96d172f9337f" name="Changes" comment="update message nghia">
+    <list default="true" id="fe55a87f-7c49-4671-8c88-96d172f9337f" name="Changes" comment="update map in contact nghia">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fe/src/components/Hoteler/Home/HotelNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fe/src/components/Hoteler/Home/HotelNavbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749744505245</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update map in contact nghia">
+      <option name="closed" value="true" />
+      <created>1750323705092</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1750323705092</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +216,7 @@
     <MESSAGE value="Update product details nghia 100%" />
     <MESSAGE value="Update router, image and productdetail nghia" />
     <MESSAGE value="update message nghia" />
-    <option name="LAST_COMMIT_MESSAGE" value="update message nghia" />
+    <MESSAGE value="update map in contact nghia" />
+    <option name="LAST_COMMIT_MESSAGE" value="update map in contact nghia" />
   </component>
 </project>
