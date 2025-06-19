@@ -31,19 +31,7 @@ const ColorVideoPanel = () => {
       </button>
     </div>
 
-      {/* Color Palette (Left) */}
-      <div className="absolute top-1/2 left-2 -translate-y-1/2 flex flex-col items-center gap-2 bg-white p-2 rounded-full shadow">
-        <div className="text-xs font-bold text-center">TRY YOUR<br />COLORS</div>
-        {colors.map((color, i) => (
-          <div
-            key={i}
-            className="w-8 h-8 rounded-full border-2"
-            style={{ backgroundColor: color }}
-          />
-        ))}
-        <div className="text-[10px] mt-2 text-center">Other<br />Set</div>
-        <div className="w-8 h-8 rounded-full border-2 bg-gradient-to-r from-blue-500 to-yellow-300" />
-      </div>
+
 
       {/* Action buttons (Right) */}
       <div className="absolute top-1/2 right-2 -translate-y-1/2 flex flex-col items-center gap-3">

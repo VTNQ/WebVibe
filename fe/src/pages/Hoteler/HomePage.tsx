@@ -25,7 +25,7 @@ const HomePage = () => {
                     <HotelRoomList />
                     <MenuSection />
                     <ColorVideoPanel />
-                    <ExpertTeam />
+                    {/* <ExpertTeam /> */}
                     <About />
                     <BlogSection/>
                 </>
