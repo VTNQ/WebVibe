@@ -1,5 +1,8 @@
 import React from "react";
 import RoomMarquee from "../../components/Hoteler/Room/RoomBanner";
+import ServiceSection from "@/components/Hoteler/About/ServiceSection";
+import StatisticCounter from "@/components/Hoteler/Home/StatisticCounter";
+import TestimonialSlider from "@/components/Hoteler/About/TestimonialSlider";
 export default function HotelerAboutPage() {
   return (
     <div className="bg-white text-gray-700">
@@ -75,6 +78,14 @@ export default function HotelerAboutPage() {
         </div>
       </div>
       <RoomMarquee />
+      <ServiceSection />
+      <div className="flex justify-center gap-16 mb-20">
+        <StatisticCounter number={20} label="Projects" />
+        <StatisticCounter number={35} label="People" />
+        <StatisticCounter number={40} label="Years" />
+        <StatisticCounter number={30} label="Award Winner" />
+      </div>
+      <TestimonialSlider/>
     </div>
   );
 }
