@@ -106,6 +106,18 @@ export default function HotelerContactPage() {
           </div>
         </div>
       </div>
+      <div className="mt-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9298039278174!2d106.67627387451766!3d10.81668395845092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19bf6d3a5%3A0x42cb9e8263400b7a!2zODM4IMSQLiBOZ3V54buFbiBLaeG7h20sIFBoxrDhu51uZyAzLCBHw7IgVuG6pXAsIEjhu5MgQ2jDrSBNaW5oIDcxNDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1750323418943!5m2!1svi!2s"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Google Map Location"
+        ></iframe>
+      </div>
     </div>
   );
 }
