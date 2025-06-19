@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { FaLightbulb } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { GiPoolDive } from "react-icons/gi";
+
 const OutdoorActivitiesSection = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView({ triggerOnce: true });
@@ -21,7 +22,7 @@ const OutdoorActivitiesSection = () => {
     return (
         <section
             ref={ref}
-            className="relative bg-white px-6 md:px-20 py-20 grid md:grid-cols-2 gap-10 items-center"
+            className="relative bg-white px-4 sm:px-6 md:px-10 lg:px-20 py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
         >
             {/* Left Content */}
             <div>
@@ -33,33 +34,32 @@ const OutdoorActivitiesSection = () => {
                     initial="hidden"
                     animate={controls}
                     variants={titleVariants}
-                    className="text-4xl md:text-5xl font-serif font-semibold text-gray-900 leading-snug"
+                    className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-gray-900 leading-snug"
                 >
                     We Provide Outdoor <br />
                     Activities To All Visitors
                 </motion.h2>
 
-                <p className="text-[#a17441] font-semibold mt-4">
-                    San Francisco has hills with views, the coast, excellent food & has been <br />
+                <p className="text-[#a17441] font-semibold mt-4 text-sm sm:text-base">
+                    San Francisco has hills with views, the coast, excellent food & has been <br className="hidden sm:block" />
                     voted the happiest, healthiest and fittest city in the States many times.
                 </p>
 
                 {/* Icons */}
-                <div className="mt-10 flex flex-wrap gap-10">
+                <div className="mt-8 flex flex-wrap gap-8">
                     <div className="group flex items-center gap-3 cursor-pointer" style={{ perspective: '1000px' }}>
-                        <FaLightbulb className="text-[#a17441] h-8 w-8 transition-transform duration-500 group-hover:rotate-y-180" />
+                        <FaLightbulb className="text-[#a17441] h-7 w-7 sm:h-8 sm:w-8 transition-transform duration-500 group-hover:rotate-y-180" />
                         <div>
-                            <p className="font-medium text-gray-900">The Best</p>
-                            <p className="text-gray-500">Lighting</p>
+                            <p className="font-medium text-gray-900 text-sm sm:text-base">The Best</p>
+                            <p className="text-gray-500 text-sm sm:text-base">Lighting</p>
                         </div>
                     </div>
 
-
                     <div className="group flex items-center gap-3 cursor-pointer" style={{ perspective: '1000px' }}>
-                        <GiPoolDive className="h-8 w-8 text-[#a17441] transition-transform duration-500 group-hover:rotate-y-180" />
+                        <GiPoolDive className="text-[#a17441] h-7 w-7 sm:h-8 sm:w-8 transition-transform duration-500 group-hover:rotate-y-180" />
                         <div>
-                            <p className="font-medium text-gray-900">The Best</p>
-                            <p className="text-gray-500">Swimming</p>
+                            <p className="font-medium text-gray-900 text-sm sm:text-base">The Best</p>
+                            <p className="text-gray-500 text-sm sm:text-base">Swimming</p>
                         </div>
                     </div>
                 </div>
@@ -84,31 +84,29 @@ const OutdoorActivitiesSection = () => {
 
             {/* Right Image Stack */}
             <div className="relative w-full flex justify-center items-center">
-                {/* Đường viền nâu mảnh nối 2 ảnh */}
-                <div className="absolute top-12 right-28 h-[412px] max-h-[70%] max-w-full w-[40%]  border-[#a17441] border-solid " style={{ zIndex: '1', borderWidth: '1px 1px 1px 1px' }}></div>
-
+                {/* Viền mảnh */}
+                <div className="absolute top-12 right-8 md:right-28 h-[250px] sm:h-[300px] md:h-[412px] w-[40%] border-[#a17441] border border-solid z-0"></div>
 
                 {/* Ảnh phía sau */}
-                <div className="absolute group top-0 right-0 w-60 h-44 border-[6px] border-white shadow-lg overflow-hidden" style={{ zIndex: '2' }}>
+                <div className="absolute group top-0 right-0 w-40 sm:w-60 h-32 sm:h-44 border-[6px] border-white shadow-lg overflow-hidden z-10">
                     <img
                         src="https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/about3-550x550.jpg"
                         alt="Hotel Lounge"
                         className="object-cover w-full h-full"
                     />
-                      <div className="absolute top-0 left-[-100%] w-1/2 h-full bg-gradient-to-r from-transparent to-white/30 group-hover:animate-shine" />
+                    <div className="absolute top-0 left-[-100%] w-1/2 h-full bg-gradient-to-r from-transparent to-white/30 group-hover:animate-shine" />
                 </div>
 
                 {/* Ảnh phía trước */}
-                <div className="relative group overflow-hidden mt-24 w-96 h-60 border-[6px] border-white shadow-2xl z-10">
+                <div className="relative group overflow-hidden mt-24 w-64 sm:w-80 md:w-96 h-44 sm:h-52 md:h-60 border-[6px] border-white shadow-2xl z-20">
                     <img
                         src="https://dev251.kodesolution.com/hoteler/wp-content/uploads/2025/01/about3-550x550.jpg"
                         alt="Hotel Hallway"
                         className="object-cover w-full h-full"
                     />
-                     <div className="absolute top-0 left-[-100%] w-1/2 h-full bg-gradient-to-r from-transparent to-white/30 group-hover:animate-shine" />
+                    <div className="absolute top-0 left-[-100%] w-1/2 h-full bg-gradient-to-r from-transparent to-white/30 group-hover:animate-shine" />
                 </div>
             </div>
-
         </section>
     );
 };
