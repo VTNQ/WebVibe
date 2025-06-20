@@ -20,7 +20,7 @@ const HotelNavbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50 || !isFashionRoot);
+      setScrolled(window.scrollY > 50 || isFashionRoot);
     };
 
     window.addEventListener("scroll", handleScroll);
