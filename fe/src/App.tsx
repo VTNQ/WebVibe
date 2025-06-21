@@ -14,6 +14,10 @@ import HotelerRoom from "./pages/Hoteler/HotelerRoom";
 import RoomDetail from "./pages/Hoteler/HotelerRoomDetail";
 import HotelerContactPage from "./pages/Hoteler/HotelerContactPage";
 import HotelerAboutPage from "./pages/Hoteler/HotelerAboutPage";
+import HotelerService from "./pages/Hoteler/ServicePage/HotelerService.tsx";
+import HotelerBroadbandInternetService from "./pages/Hoteler/ServicePage/BroadbandInternetService.tsx";
+import HotelerNews from "./pages/Hoteler/NewsPage/HotelerNews.tsx";
+import BenefitPage from "./pages/Hoteler/NewsPage/BenefitPage.tsx";
 
 function App() {
   return (
@@ -37,6 +41,10 @@ function App() {
           <Route path="rooms/details" element={<RoomDetail/>}/>
           <Route path="contact" element={<HotelerContactPage/>}/>
           <Route path="about" element={<HotelerAboutPage />} />
+          <Route path="service" element={<HotelerService/>}/>
+          <Route path="Broadband-Internet" element={<HotelerBroadbandInternetService/>} />
+          <Route path="news" element={<HotelerNews/>}/>
+          <Route path="Benefit-from-a-15-discount-reservations" element={<BenefitPage/>}/>
       </Route>
       {/* Hoteler routes */}
      
