@@ -89,7 +89,7 @@ const HotelNavbar = () => {
           </li>
 
 
-          <li><a href="#" className="hover:text-yellow-500">Services</a></li>
+          <li><a href="/Hoteler/service" className="hover:text-yellow-500">Services</a></li>
           <li className="relative group">
             <a href="#" className="hover:text-yellow-500">Rooms & Suites</a>
             <ul className="absolute left-0 top-full pt-2 bg-white shadow-lg hidden group-hover:block min-w-[160px] z-50">
